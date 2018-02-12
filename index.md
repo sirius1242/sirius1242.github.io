@@ -6,6 +6,14 @@
 #### I'm using archlinux as my OS, and this is some things I think maybe useful for newers:
 [arch.pdf](file/arch.pdf)
 
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
 ### There are some things about Jekyll Themes and markdown 
 #### (My pages are using slate theme, which is an Jekyll Theme, and Jekyll Theme use markdown)
 You can use the [editor on GitHub](https://github.com/sirius1242/sirius1242.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.

@@ -1,7 +1,8 @@
 ---
-layout:	post
-title:	"linux tutor"
-date:		2018-02-12 18:41:52
+layout: post
+title:  "linux tutor"
+date:   2018-02-12 18:41:52 +0800
+categories: jekyll update
 ---
 # A basicall tutor to linux using
 ### these are based on my personal experience, only for advice
