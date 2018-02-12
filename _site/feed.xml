@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-02-12T22:26:54+08:00</updated><id>http://localhost:4000/</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2018/02/12/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-02-12T15:54:11+08:00</published><updated>2018-02-12T15:54:11+08:00</updated><id>http://localhost:4000/jekyll/update/2018/02/12/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/02/12/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">linux tutor</title><link href="http://localhost:4000/2018/02/12/linux_tutor.html" rel="alternate" type="text/html" title="linux tutor" /><published>2018-02-12T00:00:00+08:00</published><updated>2018-02-12T00:00:00+08:00</updated><id>http://localhost:4000/2018/02/12/linux_tutor</id><content type="html" xml:base="http://localhost:4000/2018/02/12/linux_tutor.html">&lt;h1 id=&quot;a-basicall-tutor-to-linux-using&quot;&gt;A basicall tutor to linux using&lt;/h1&gt;
+&lt;h3 id=&quot;these-are-based-on-my-personal-experience-only-for-advice&quot;&gt;these are based on my personal experience, only for advice&lt;/h3&gt;
+&lt;h2 id=&quot;mirrors-config&quot;&gt;mirrors config&lt;/h2&gt;
+&lt;h3 id=&quot;these-are-for-chinese-users-and-i-chose-mirrors-of-ustc-for-help-of-other-mirrors-please-check-their-official-website&quot;&gt;these are for chinese users, and I chose mirrors of USTC, for help of other mirrors, please check their official website&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mirrors.ustc.edu.cn/&quot;&gt;USTC mirrors&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Archlinux: &lt;a href=&quot;http://mirrors.ustc.edu.cn/help/archlinux.html&quot;&gt;Arch Linux mirrors help&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Ubuntu: &lt;a href=&quot;http://mirrors.ustc.edu.cn/help/ubuntu.html&quot;&gt;Ubuntu Linux mirrors help&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Fedora: &lt;a href=&quot;http://mirrors.ustc.edu.cn/help/fedora.html&quot;&gt;Fedora Linux mirrors help&lt;/a&gt;
+    &lt;h2 id=&quot;basical-commands&quot;&gt;basical commands&lt;/h2&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ls:
+    &lt;ul&gt;
+      &lt;li&gt;if no arguments, to list all files in the current directory.&lt;/li&gt;
+      &lt;li&gt;if argument is directory, list all files and directories under that directory.&lt;/li&gt;
+      &lt;li&gt;if argument is a regular expression, list files whose file name match the regex.&lt;/li&gt;
+      &lt;li&gt;there are some options, such as -a, it can list all files including whose filename begin with a ‘.’.&lt;/li&gt;
+      &lt;li&gt;‘-l’ to list informations in detail.&lt;/li&gt;
+      &lt;li&gt;‘-h’ to make the size human-readable&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-hl&lt;/span&gt;
+
+  总用量 20K
+  &lt;span class=&quot;nt&quot;&gt;-rw-r--r--&lt;/span&gt; 1 lwr lwr   25 2月  12 16:14 _config.yml
+  drwxr-xr-x 2 lwr lwr 4.0K 2月  12 16:23 file
+  &lt;span class=&quot;nt&quot;&gt;-rw-r--r--&lt;/span&gt; 1 lwr lwr 1.6K 2月  12 16:27 index.md
+  drwxr-xr-x 3 lwr lwr 4.0K 2月  12 16:45 _posts
+  &lt;span class=&quot;nt&quot;&gt;-rw-r--r--&lt;/span&gt; 1 lwr lwr  223 2月  12 16:17 README.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;cd:
+    &lt;ul&gt;
+      &lt;li&gt;change the directory, it will change current directory to the argument you added.&lt;/li&gt;
+      &lt;li&gt;’..’ is the parent directory of current directory, and ‘.’ is current directory.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;pwd:
+  show path of current directory&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;man:
+    &lt;ul&gt;
+      &lt;li&gt;the command to help you learn more about linux commands.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;cp:
+    &lt;ul&gt;
+      &lt;li&gt;copy files&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nb&quot;&gt;cp source &lt;/span&gt;destination
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;if copy directory, you need to add ‘-r’ option.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;rm:
+    &lt;ul&gt;
+      &lt;li&gt;remove the file&lt;/li&gt;
+      &lt;li&gt;if remove directory, you need to add ‘-r’ option, then it will travel all directories beneath destionation directory and it subdirectories and subdirectories of the subdirectories …, and then totally remove the directory, you may need to add ‘-f’ to directly remove without many confirms&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;caution : it’s not easy to recover files in linux, so carefully think before remove!!!&lt;/strong&gt; you can add “alias rm=’rm -i’” in your shell rc file (~/.bashrc, ~/.zshrc and so on) to confirm you before remove.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;mv:
+    &lt;ul&gt;
+      &lt;li&gt;move files&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nb&quot;&gt;mv source &lt;/span&gt;destination
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;if &lt;strong&gt;destination&lt;/strong&gt; is a name not appeared in current directory, mv will change the name of &lt;strong&gt;source&lt;/strong&gt; to destionation.&lt;/li&gt;
+      &lt;li&gt;if &lt;strong&gt;destination&lt;/strong&gt; is the filename of another file in current directory, mv will replace &lt;strong&gt;destination&lt;/strong&gt; with &lt;strong&gt;source&lt;/strong&gt; (‘-i’ will confirm before replace)&lt;/li&gt;
+      &lt;li&gt;if &lt;strong&gt;destination&lt;/strong&gt; is the name of a directory under current directory, mv will move &lt;strong&gt;source&lt;/strong&gt; under the directory &lt;strong&gt;destination&lt;/strong&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;history:
+  to check the commands you have typed.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;locate:
+    &lt;ul&gt;
+      &lt;li&gt;to find files&lt;/li&gt;
+      &lt;li&gt;it need to build a database of index, so sometimes you need to update database manually by &lt;strong&gt;updatedb&lt;/strong&gt; when you want to find a new file you created before a short period.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;vi(vim):
+    &lt;ul&gt;
+      &lt;li&gt;a good editor&lt;/li&gt;
+      &lt;li&gt;there are also good other editors, such as emacs, visualstudiocode, and so on.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;find:
+    &lt;ul&gt;
+      &lt;li&gt;find files&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  find &lt;span class=&quot;nt&quot;&gt;-name&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'filename'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-print&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;df:
+    &lt;ul&gt;
+      &lt;li&gt;check the disk usage, use ‘-h’ to show space by ‘K,M,G’.&lt;/li&gt;
+      &lt;li&gt;there is a software with gui: &lt;strong&gt;baobab&lt;/strong&gt;, it can analyse the usage of files in detail.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;sudo:
+    &lt;ul&gt;
+      &lt;li&gt;execute the command as root&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;caution: it’s a dangerous command, root have right to do anything, and it can also damage anything&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;anything-is-file&quot;&gt;anything is file&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;devices are under ‘/dev’ directory, you can use &lt;strong&gt;mount&lt;/strong&gt; command to mount block devices to certain directory, or use &lt;strong&gt;unmount&lt;/strong&gt; command to cancel the mount. Normal file can also be mounted, so you can directly check the files in iso file by mounting it.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;every file stored in certain blocks of your disk, and the file you saw in the directory is a pointer pointing to the file, and &lt;strong&gt;ln&lt;/strong&gt; command can create “hard link”, which is another pointer in another location to the same file, and the file will disappear only when all pointers are removed, but it can only created in the same diskpart.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;pipe-and-redirect&quot;&gt;pipe and redirect&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;pipe:
+    &lt;ul&gt;
+      &lt;li&gt;make the output of the command before pipe as the input after the pipe.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; |grep index
+
+  index.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;redirect:
+    &lt;ul&gt;
+      &lt;li&gt;’&amp;lt;’ ‘&amp;gt;’ and ‘»’&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  a.out &amp;lt; input.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;use the content of &lt;strong&gt;input.txt&lt;/strong&gt; as the input of &lt;strong&gt;a.out&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  a.out &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; output.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;export the output of &lt;strong&gt;a.out&lt;/strong&gt; to the file __output.txt&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  a.out &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; output.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;export the output of &lt;strong&gt;a.out&lt;/strong&gt; to the tail of file __output.txt&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;file descriptor
+    &lt;ul&gt;
+      &lt;li&gt;0: stdin&lt;/li&gt;
+      &lt;li&gt;1: stdout&lt;/li&gt;
+      &lt;li&gt;2: stderr&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;some-softwares-in-linux-platform&quot;&gt;some softwares in linux platform&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;office: libreoffice and wps&lt;/li&gt;
+  &lt;li&gt;pdf: texlive&lt;/li&gt;
+  &lt;li&gt;input method: fcitx and ibus&lt;/li&gt;
+  &lt;li&gt;image processing: gimp and imagemagick, and inkscape is for editing vector illustrations.&lt;/li&gt;
+  &lt;li&gt;data processing: ipython (an interactive shell of python), scilab. Matlab and mathematica also have linux version.&lt;/li&gt;
+  &lt;li&gt;audio and video: mplayer (based on cli), vlc&lt;/li&gt;
+  &lt;li&gt;virtual machine: virtualbox (vmware have linux version.&lt;/li&gt;
+  &lt;li&gt;browser: firefox, chromium and so on&lt;/li&gt;
+  &lt;li&gt;dictionary: goldendict&lt;/li&gt;
+  &lt;li&gt;processes manager: htop (top is installed when system installed, but htop is more integrated and easier to use)&lt;/li&gt;
+  &lt;li&gt;learning with cards: anki&lt;/li&gt;
+  &lt;li&gt;games(XD): teeworlds and so on, steam platform have linux version, but the GPU driver of linux are not so good, so it many cause poor experience when playing games which need many resources.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">A basicall tutor to linux using these are based on my personal experience, only for advice mirrors config these are for chinese users, and I chose mirrors of USTC, for help of other mirrors, please check their official website USTC mirrors Archlinux: Arch Linux mirrors help Ubuntu: Ubuntu Linux mirrors help Fedora: Fedora Linux mirrors help basical commands ls: if no arguments, to list all files in the current directory. if argument is directory, list all files and directories under that directory. if argument is a regular expression, list files whose file name match the regex. there are some options, such as -a, it can list all files including whose filename begin with a ‘.’. ‘-l’ to list informations in detail. ‘-h’ to make the size human-readable</summary></entry></feed>
