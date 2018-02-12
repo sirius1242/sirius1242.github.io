@@ -1,3 +1,8 @@
+---
+layout:	post
+title:	"linux tutor"
+date:		2018-02-12 18:41:52
+---
 # A basicall tutor to linux using
 ### these are based on my personal experience, only for advice
 ## mirrors config
