@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "linux tutor"
 date:   2018-02-12 18:41:52 +0800
 categories: jekyll update

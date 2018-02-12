@@ -6,11 +6,14 @@
 #### I'm using archlinux as my OS, and this is some things I think maybe useful for newers:
 [arch.pdf](file/arch.pdf)
 
+## These are my passages:
+
 <ul>
   {% for post in site.posts %}
-    <li>
+    <h1>
       <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+    </h1>
+		{{ post.date }}
   {% endfor %}
 </ul>
 
