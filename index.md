@@ -3,9 +3,11 @@
 #### this is a file with some tips:
 [tips.pdf](file/tips.pdf)
 
-####I'm using archlinux as my OS, and this is some things I think maybe useful for newers:
+#### I'm using archlinux as my OS, and this is some things I think maybe useful for newers:
 [arch.pdf](file/arch.pdf)
 
+### There are some things about Jekyll Themes and markdown 
+#### (My pages are using slate theme, which is an Jekyll Theme, and Jekyll Theme use markdown)
 You can use the [editor on GitHub](https://github.com/sirius1242/sirius1242.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
