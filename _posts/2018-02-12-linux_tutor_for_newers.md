@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "linux tutor"
+title:  "linux tutor for newers"
 date:   2018-02-12 18:41:52 +0800
 categories: jekyll update
 ---
