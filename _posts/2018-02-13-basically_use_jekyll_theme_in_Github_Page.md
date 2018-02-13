@@ -4,6 +4,7 @@ title: basically use jekyll theme in Github Page
 date: 2018-02-13 12:52:16 +0800
 categories: jekyll update
 ---
+## [Back to home]({{ site.url }}/)
 # basically tutor to use jekyll theme in Github Page
 ### if you don't have a Github Page, create it first.
 - create a repository with the name: username.github.io
@@ -48,6 +49,11 @@ categories: jekyll update
 ![alt text]({% raw %}{{ "/assets/graph_name.jpg" | absolute_url }}{% endraw %})
 ```
 these can found in [official website of jekyll](https://jekyllrb.com/docs/posts/), there are also things such as displaying post categories or tags and so on.
+
+- back to home link can realize by this:
+```markdown
+[Back to home]({% raw %}{{ site.url }}{% endraw %}/)
+```
 
 ### after finished your blog, you can preview it locally
 

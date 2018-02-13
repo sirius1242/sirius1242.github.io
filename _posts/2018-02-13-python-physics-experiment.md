@@ -4,6 +4,7 @@ title: "python in data processing of physics experiment"
 date: 2018-02-13 10:48:32 +0800
 categories: jekyll update
 ---
+## [Back to home]({{ site.url }}/)
 # some experiences of using python to deal with data in physics experiment of USTC.
 There are many modules in python, such as matplotlib, numpy, scipy, sympy and so on. So, you can do many things with python.
 

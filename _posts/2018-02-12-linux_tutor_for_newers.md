@@ -4,6 +4,7 @@ title:  "linux tutor for newers"
 date:   2018-02-12 18:41:52 +0800
 categories: jekyll update
 ---
+## [Back to home]({{ site.url }}/)
 # A basical tutor to linux using
 ### these are based on my personal experience, only for advice
 ## mirrors config
