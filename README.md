@@ -20,7 +20,7 @@ title: file to create
 date: 2018-02-13 12:39:30 +0800
 categories: jekyll update
 ---
-[Back to home]({% raw %}{{ site.url }}{% endraw %}/)
+[Back to home]({{ site.url }}/)
 ```
 you will enter the environment of editing the file (vim)
 
