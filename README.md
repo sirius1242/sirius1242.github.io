@@ -12,3 +12,15 @@ after you cloned it, you need to adjust the permissions, and then execute it, th
 chmod +x create_post.sh
 ./create_post.sh "file to create"
 ```
+and it will create a file with filename `_posts/2018-02-13-file_to_create.md`, and add the YAML Front Matter in the head of file:
+```markdown
+---
+layout: default
+title: file to create
+date: 2018-02-13 12:39:30 +0800
+categories: jekyll update
+---
+```
+you will enter the environment of editing the file (vim)
+
+The date and the time in filename is the time you execute the command.
