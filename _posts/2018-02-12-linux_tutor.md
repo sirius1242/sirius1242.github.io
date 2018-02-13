@@ -4,7 +4,7 @@ title:  "linux tutor"
 date:   2018-02-12 18:41:52 +0800
 categories: jekyll update
 ---
-# A basicall tutor to linux using
+# A basical tutor to linux using
 ### these are based on my personal experience, only for advice
 ## mirrors config
 ### these are for chinese users, and I chose mirrors of USTC, for help of other mirrors, please check their official website

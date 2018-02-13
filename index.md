@@ -8,14 +8,14 @@
 
 ## These are my passages:
 
-<ul>
-  {% for post in site.posts %}
-    <h1>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </h1>
-		{{ post.date }}
-  {% endfor %}
-</ul>
+> <ul>
+>   {% for post in site.posts %}
+>     <h1>
+>       <a href="{{ post.url }}">{{ post.title }}</a>
+>     </h1>
+> 		{{ post.date }}
+>   {% endfor %}
+> </ul>
 
 ### There are some things about Jekyll Themes and markdown 
 #### (My pages are using slate theme, which is an Jekyll Theme, and Jekyll Theme use markdown)
