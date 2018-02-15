@@ -17,8 +17,11 @@
 >   {% endfor %}
 > </ul>
 
-### There are some things about Jekyll Themes and markdown 
-#### (My pages are using slate theme, which is an Jekyll Theme, and Jekyll Theme use markdown)
+#### No comment function added, so if you have any advice, you can open issue to my github repo:[https://github.com/sirius1242/sirius1242.github.io/issues](https://github.com/sirius1242/sirius1242.github.io/issues)
+#### And I'm not a native English speaker, hope you forgive my poor English.
+
+## There are some things about Jekyll Themes and markdown 
+##### (My pages are using slate theme, which is an Jekyll Theme, and Jekyll Theme use markdown)
 You can use the [editor on GitHub](https://github.com/sirius1242/sirius1242.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
