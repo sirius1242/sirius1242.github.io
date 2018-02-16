@@ -2,7 +2,7 @@
 layout: default
 title: "python in data processing of physics experiment"
 date: 2018-02-13 10:48:32 +0800
-categories: jekyll update
+categories: python
 ---
 ## [Back to home]({{ site.url }}/)
 # some experiences of using python to deal with data in physics experiment of USTC.
@@ -21,14 +21,14 @@ to load the data and enter ipython. Or, you can also record data only when you w
 And then, I will introduce some modules for you to use.
 
 - matplotlib: It's a good module to plot functions.
-	```python
+```python
 	import matplotlib.pyplot as plt
 
 	x = [1, 2, 3, 4, 5]
 	y = [z ** 2 for z in x]
 	plt.plot(x, y, 'r*')
 	plt.show()
-	```
+```
 	and ipython will output:
 
 	![plot]({{ "/assets/plot.png" | absolute_url}})

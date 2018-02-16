@@ -1,24 +1,24 @@
 ## Welcome to My GitHub Pages
 
-#### this is a file with some tips:
-[tips.pdf](file/tips.pdf)
+## These are my essays:
 
-#### I'm using archlinux as my OS, and this is some things I think maybe useful for newers:
-[arch.pdf](file/arch.pdf)
-
-## These are my passages:
+>  [![categories]({{ "/assets/categories.png" | absolute_url }} ){:class='img-responsive"} **categories**]({{ site.url }}/category/)
 
 > <ul>
 >   {% for post in site.posts %}
 >     <h1>
 >       <a href="{{ post.url }}">{{ post.title }}</a>
 >     </h1>
-> 		{{ post.date }}
+>			<h5>{{ post.categories }}</h5>
+>  		{{ post.date }}
 >   {% endfor %}
 > </ul>
 
 #### No comment function added, so if you have any advice, you can open issue to my github repo:[https://github.com/sirius1242/sirius1242.github.io/issues](https://github.com/sirius1242/sirius1242.github.io/issues)
 #### And I'm not a native English speaker, hope you forgive my poor English.
+
+
+
 
 ## There are some things about Jekyll Themes and markdown 
 ##### (My pages are using slate theme, which is an Jekyll Theme, and Jekyll Theme use markdown)

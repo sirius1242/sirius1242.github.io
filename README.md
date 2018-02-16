@@ -18,7 +18,7 @@ and it will create a file with filename `_posts/2018-02-13-file_to_create.md`, a
 layout: default
 title: file to create
 date: 2018-02-13 12:39:30 +0800
-categories: jekyll update
+categories: 
 ---
 ## [Back to home]({{ site.url }}/)
 ```

@@ -2,7 +2,7 @@
 layout: default
 title: basically use jekyll theme in Github Page
 date: 2018-02-13 12:52:16 +0800
-categories: jekyll update
+categories: sort_out
 ---
 ## [Back to home]({{ site.url }}/)
 # basically tutor to use jekyll theme in Github Page

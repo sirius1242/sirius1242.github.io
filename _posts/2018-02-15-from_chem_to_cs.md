@@ -2,7 +2,7 @@
 layout: default
 title: from chem to cs
 date: 2018-02-15 23:36:00 +0800
-categories: jekyll update
+categories: summary
 ---
 ## [Back to home]({{ site.url }}/)
 # From chemistry to computer science
@@ -13,7 +13,7 @@ One year later, in grade three, I fell in love with chemistry just when I began 
 
 I entered the department of computer science by some reasons, It maybe the farest department from chemistry, we even have no chemistry class in the four years. With no basis, I began to study C-language in the first semester. We have a league called LUG, which for Linux-User-Group, and I contacted Linux Operating System in that period. Linux is an efficient operating system, expect for its GUI (actually, I like the style of GNOME very much, but it always crash XD), my system changed from Fedora to Archlinux, and it's nearly one year and half that I didn't use Windows anymore (expect virtual machine).
 
-![tux]({{ "/assets/tux.png" | absolute_url}})
+![tux]({{ "/assets/tux.png" | absolute_url}}){:style="float: right;margin-right: 7px;magrin-top: 7px;"}
 
 Linux is called GNU/Linux, and I contacted open source at that time, I think open source is great, they use and share code, there are also intellectual property, but its destination is to make it serve people greater. There are many great softwares in open source community, such as tex, git, vim, firefox, virtualbox and so on. You may say the universal level of open source softwares is lower that closed source ones, but I said, by the contribution of coders cross the word and more and more companies who also contribute to open source communtiy, it will be better and better.
 

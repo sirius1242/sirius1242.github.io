@@ -2,7 +2,7 @@
 layout: default
 title: Mass send message by python in QQ
 date: 2018-02-15 21:54:03 +0800
-categories: jekyll update
+categories: python
 ---
 ## [Back to home]({{ site.url }}/)
 # some experiences for sending QQ message by python
