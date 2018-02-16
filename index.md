@@ -2,7 +2,7 @@
 
 ## These are my essays:
 
->  [![categories]({{ "/assets/categories.png" | absolute_url }} ){:class='img-responsive"} **categories**]({{ site.url }}/category/)
+>  [![categories]({{ "/assets/categories.png" | absolute_url }} ){:class='img-responsive"} <span style="font-size: 36px;">categories</span>]({{ site.url }}/category/)
 
 > <ul>
 >   {% for post in site.posts %}
