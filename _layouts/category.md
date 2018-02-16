@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h2> <a href="{{ site.url }}">Back to home</a> </h2>
+<h2> <a href="{{ site.url }}/category/">Back to categories list</a> </h2>
 
 <h1> {{ page.category }} </h1>
 {% for post in site.categories[page.category] %}
