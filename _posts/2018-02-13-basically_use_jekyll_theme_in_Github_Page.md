@@ -55,6 +55,12 @@ these can found in [official website of jekyll](https://jekyllrb.com/docs/posts/
 [Back to home]({% raw %}{{ site.url }}{% endraw %}/)
 ```
 
+- you can use post.exerpt or post.content to show the exerpt of your post, and deal with it with the help of string filters of [liquid template](https://help.shopify.com/themes/liquid/filters/string-filters), here is my example:
+```markdown
+{% raw %}{{ post.content | replace: "</h1>", " | " | strip_html | remove: "Back to home" | replace: " | ", "<br>" | truncatewords: 50}}{% endraw %}
+```
+- and with the help of utf8 characters, your blog will be more beautiful!
+- there are also categories and other things to imporve your blog, you can find tutors in [jekyllrb.com](https://jekyllrb.com/docs/home/)
 ### after finished your blog, you can preview it locally
 
 - write a Gemfile with these lines:
