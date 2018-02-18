@@ -22,7 +22,9 @@
 ## &#128211; There are some things about Jekyll Themes and markdown<sup>[^2]</sup>
 [^2]: (My pages are using slate theme, which is an Jekyll Theme, and Jekyll Theme use markdown)
 
-<details><summary markdown="span"><code>click to view</code></summary>
+<details><summary markdown="span">`click to view`</summary>
+
+{{ "
 
 You can use the [editor on GitHub](https://github.com/sirius1242/sirius1242.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
@@ -59,4 +61,5 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
+ " | markdownify }}
 </details>

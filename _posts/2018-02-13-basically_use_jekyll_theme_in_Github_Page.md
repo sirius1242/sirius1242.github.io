@@ -60,6 +60,7 @@ these can found in [official website of jekyll](https://jekyllrb.com/docs/posts/
 {% raw %}{{ post.content | replace: "</h1>", " | " | strip_html | remove: "Back to home" | replace: " | ", "<br>" | truncatewords: 50}}{% endraw %}
 ```
 - and with the help of utf8 characters, your blog will be more beautiful!
+- use html `<details>` tag to fold the contents, but markdown will not be processed, however, use liquid template `markdownify` to process it, if want detail, you can check my code.
 - there are also categories and other things to imporve your blog, you can find tutors in [jekyllrb.com](https://jekyllrb.com/docs/home/)
 ### after finished your blog, you can preview it locally
 
