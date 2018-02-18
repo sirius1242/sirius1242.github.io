@@ -6,6 +6,6 @@ title: categories
 
 ---
 {% for category in site.categories %}
-> <h1><a href="{{ site.url }}/category/{{ category | first | url_encode }}.html">{{ category | first }}</a></h1>
+> <h1><a href="{{ site.url }}/category/{{ category | first | url_encode }}.html">&#128194;{{ category | first }}</a></h1>
 ---
 {% endfor %}

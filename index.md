@@ -4,15 +4,15 @@
 
 >  [![categories]({{ "/assets/categories.png" | absolute_url }} ){:class='img-responsive"} <span style="font-size: 36px;">categories</span>]({{ site.url }}/category/)
 
-> <ul>
->   {% for post in site.posts %}
->     <h1>
->       <a href="{{ post.url }}">{{ post.title }}</a>
->     </h1>
->			<h5>{{ post.categories }}</h5>
->  		{{ post.date }}
->   {% endfor %}
-> </ul>
+<ul>
+  {% for post in site.posts %}
+    <h1>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h1>
+    &#128193; {{ post.categories }} &emsp; &#128197; {{ post.date }}<br>
+   {{ post.content | replace: "</h1>", " | " | strip_html | remove: "Back to home" | replace: " | ", "<br>" | truncatewords: 50}}
+  {% endfor %}
+</ul>
 
 #### No comment function added, so if you have any advice, you can open issue to my github repo:[https://github.com/sirius1242/sirius1242.github.io/issues](https://github.com/sirius1242/sirius1242.github.io/issues)
 #### And I'm not a native English speaker, hope you forgive my poor English.
