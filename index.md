@@ -1,19 +1,21 @@
 ## Welcome to My GitHub Pages
 
-## These are my essays[^1]:
+### These are my essays[^1]:
 
 >  [![categories]({{ "/assets/categories.png" | absolute_url }} ){:class='img-responsive"} <span style="font-size: 36px;">categories</span>]({{ site.url }}/category/)
 
+---
 <ul>
   {% for post in site.posts %}
     <h1>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </h1>
     &#128193; {{ post.categories }} &emsp; &#128197; {{ post.date }}<br>
-		<details>
-		<summary>click to view excerpt</summary>
+		<details open>
+		<summary>click to hide excerpt</summary>
    {{ post.content | replace: "</h1>", " | " | strip_html | remove: "Back to home" | replace: " | ", "<br>" | truncatewords: 50}}
 	 </details>
+{{ "---" | markdownify }}
   {% endfor %}
 </ul>
 
@@ -60,6 +62,8 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+---
 
  " | markdownify }}
 </details>
