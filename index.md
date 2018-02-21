@@ -21,6 +21,15 @@
 
 [^1]: No comment function added, so if you have any advice, you can open issue to my github repo:[https://github.com/sirius1242/sirius1242.github.io/issues](https://github.com/sirius1242/sirius1242.github.io/issues). And I'm not a native English speaker, hope you forgive my poor English.
 
+## There are some files:
+
+{% assign pdf_files = site.static_files | where: "pdf", true %}
+{% for mypdf in pdf_files %}
+> ### [{{ mypdf.name }}]({{ mypdf.path }})
+> ###### {{ mypdf.modified_time }}
+{% endfor %}
+---
+
 ## &#128211; There are some things about Jekyll Themes and markdown<sup>[^2]</sup>
 [^2]: (My pages are using slate theme, which is an Jekyll Theme, and Jekyll Theme use markdown)
 

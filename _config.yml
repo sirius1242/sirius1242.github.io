@@ -6,3 +6,11 @@ jekyll-archives:
   enabled:
     -categories
     -tags
+defaults:
+  - scope:
+      path: "file"
+    values:
+      pdf: true
+      path: "assets"
+    values:
+      image: true
