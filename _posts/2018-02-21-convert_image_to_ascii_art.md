@@ -2,7 +2,7 @@
 layout: default
 title: convert image to ascii art
 date: 2018-02-21 15:48:07 +0800
-categories: 
+categories: python
 ---
 ## [Back to home]({{ site.url }}/)
 
@@ -53,4 +53,4 @@ print(arr)
 
 not so complex, isn't it?
 
-Ratio and other thing you can adjust by yourself, and you can also make them to commandline options to adjust them when executing. Characters are used to identify outline of every color, so what it like doesn't matter, you can also adjust the length of character array to make ascii draw in more detail.
+Ratio and other thing you can adjust by yourself, and you can also make them to commandline options to adjust them when executing. Characters are used to identify outline of every color, so what it like doesn't matter, you can also adjust the length of character array to make ascii draw in more detail, but it seems better to use the characters with bigger density to describe deeper colors, and use ones with smaller density to describe shallow colors. All in all, have a try and you may found arguments to make asciinator perform better!
