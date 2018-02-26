@@ -11,6 +11,7 @@ defaults:
       path: "file"
     values:
       pdf: true
+  - scope:
       path: "assets"
     values:
       image: true
