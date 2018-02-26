@@ -10,12 +10,12 @@ categories: sort_out
 
 ---
 > ### this is a file with some tips:
-> [tips.pdf](file/tips.pdf)
+> [tips.pdf]({{ "/file/tips.pdf" | absolute_url }})
 
 --- 
 
 > ### I'm using archlinux as my OS, and this is some things I think maybe useful for newers:
-> [arch.pdf](file/arch.pdf)
+> [arch.pdf]({{ "/file/arch.pdf" | absolute_url }})
 
 ---
 
