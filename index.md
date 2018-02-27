@@ -2,7 +2,7 @@
 
 ### These are my essays[^1]:
 
-[![categories]({{ "/assets/categories.png" | absolute_url }} ){:class='img-responsive"} <span style="font-size: 36px;">categories</span>]({{ site.url }}/category/)
+[<span style="font-size: 36px;">&#128188; categories</span>]({{ site.url }}/category/)
 
 ---
 <ul>
@@ -21,7 +21,7 @@
 
 [^1]: No comment function added, so if you have any advice, you can open issue to my github repo:[https://github.com/sirius1242/sirius1242.github.io/issues](https://github.com/sirius1242/sirius1242.github.io/issues). And I'm not a native English speaker, hope you forgive my poor English.
 
-> ### [&#128194; this is a page which include all static files]({{ "/files.html" | absolute_url }})
+> ### [&#128194; this is a page which include all static pdf files]({{ "/files.html" | absolute_url }})
 
 <details>
 <summary style="background-color: #ddd;box-shadow: 3px 3px 4px black;list-style: none; border-radius: 10px 10px 10px 10px">

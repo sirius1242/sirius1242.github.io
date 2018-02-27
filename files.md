@@ -2,11 +2,12 @@
 layout: default
 title: static files
 ---
+## [Back to home]({{ site.url }}/)
 
-## There are some files:
+# static pdf files
 
 {% assign pdfiles = site.static_files | where: "pdf", true %}
 {% for mypdf in pdfiles %}
-> #### [{{ mypdf.name }}]({{ mypdf.path }})
+> #### [&#128442;{{ mypdf.name }}]({{ mypdf.path }})
 > ###### {{ mypdf.modified_time }}
 {% endfor %}
