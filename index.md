@@ -6,16 +6,15 @@ layout: content
 ### These are my essays[^1]:
 
 <!--[<span style="font-size: 36px;">&#128188; categories</span>]({{ site.url }}/category/)-->
-
----
+<!--div style="background-color: #FFFFFF; padding: 10px 20px"-->
 <ul>
   {% for post in site.posts %}
     <h1>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </h1>
     &#128193; {{ post.categories }} &emsp; &#128197; {{ post.date }}<br>
-		<details open>
-		<summary>click to hide excerpt</summary>
+		<details open style="display: inline-block; padding: 0px 5px; background-color:#f2f2f2; box-shadow: 3px 3px 4px black; border-radius: 5px 5px 5px 5px;">
+		<summary >click to hide excerpt</summary>
    {{ post.content | replace: "</h1>", " | " | strip_html | remove: "Back to home" | replace: " | ", "<br>" | truncatewords: 50}}
 	 </details>
 {{ "---" | markdownify }}

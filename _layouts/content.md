@@ -3,19 +3,28 @@ layout: default
 ---
 <head>
 <style>
+.sidebar {
+		display: none;
+		right: auto;
+		bottom: auto;
+		-webkit-transform: none;
+}
+
 ul.horizontal {
     list-style-type: none;
     margin: 0;
-    background-color: #3399CC;
+    /*background-color: #3399CC;*/
+    background-color: #F2F2F2;
 		padding: 0;
 		position: fixed;
 		left: 0;
 		top: 210px;
 		overflow: auto;
-		border: 5px;
-		border-style: double;
-		border-color: #008888;
+		border: 1px;
+		border-style: solid;
+		/*border-color: #008888;*/
 		box-shadow: 5px 5px 6px black;
+		border-radius: 0px 10px 10px 0px;
 }
 
 ul.horizontal li {
@@ -25,13 +34,13 @@ ul.horizontal li {
 
 ul.horizontal li a {
     display: block;
-    color: white;
+    color: black;
 		padding: 14px 20px;
     text-decoration: none;
 }
 
 ul.horizontal li a:hover:not(.active) {
-    background-color: #004040;
+    background-color: #606060;
 		padding: 14px 20px;
 }
 
