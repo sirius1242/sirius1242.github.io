@@ -3,12 +3,6 @@ layout: default
 ---
 <head>
 <style>
-.sidebar {
-		display: none;
-		right: auto;
-		bottom: auto;
-		-webkit-transform: none;
-}
 
 ul.horizontal {
     list-style-type: none;
@@ -17,14 +11,15 @@ ul.horizontal {
     background-color: #F2F2F2;
 		padding: 0;
 		position: fixed;
-		left: 0;
+		margin-left: -230px;
+		/*margin-right: 800px;*/
 		top: 210px;
 		overflow: auto;
 		border: 1px;
 		border-style: solid;
 		/*border-color: #008888;*/
 		box-shadow: 5px 5px 6px black;
-		border-radius: 0px 10px 10px 0px;
+		border-radius: 10px 10px 10px 10px;
 }
 
 ul.horizontal li {
