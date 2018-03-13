@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: content
 title: Mass send message by python in QQ
 date: 2018-02-15 21:54:03 +0800
 categories: python

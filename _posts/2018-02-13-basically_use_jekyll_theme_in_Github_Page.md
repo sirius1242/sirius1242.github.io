@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: content
 title: basically use jekyll theme in Github Page
 date: 2018-02-13 12:52:16 +0800
 categories: sort_out
@@ -24,7 +24,7 @@ categories: sort_out
 > The front matter is where Jekyll starts to get really cool. Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:
 ```markdown
 ---
-layout: default
+layout: content
 title: file to create
 date: 2018-02-13 12:39:30 +0800
 categories: jekyll update

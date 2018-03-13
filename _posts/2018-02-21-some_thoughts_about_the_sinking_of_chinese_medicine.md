@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: content
 title: some thoughts about the sinking of chinese medicine
 date: 2018-02-21 18:04:19 +0800
 categories: summary

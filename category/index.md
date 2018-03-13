@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: content
 title: categories
+permentlink: /category.html
 ---
 ## [Back to home]({{ site.url }}/)
 

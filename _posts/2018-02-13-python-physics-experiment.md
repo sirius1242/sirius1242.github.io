@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: content
 title: "python in data processing of physics experiment"
 date: 2018-02-13 10:48:32 +0800
 categories: python

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: content
 ---
 
 <a href="{{ site.url }}/category/"><span style="color:#0f79d0; font-size: 36px;">&#128188; Back to categories list</span></a>

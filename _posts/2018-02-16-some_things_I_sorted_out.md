@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: content
 title: some things I sorted out
 date: 2018-02-16 20:43:12 +0800
 categories: sort_out

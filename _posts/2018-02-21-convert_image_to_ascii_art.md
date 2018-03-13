@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: content
 title: convert image to ascii art
 date: 2018-02-21 15:48:07 +0800
 categories: python

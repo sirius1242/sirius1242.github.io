@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: content
 title: keep a remote process running
 date: 2018-03-08 12:09:14 +0800
 categories: linux
@@ -27,11 +27,11 @@ Linux have a command called tmux:
 
 ![tmux]({{ "/assets/480px-Tmux.png" | absolute_url }})
 
-tmux can not only divide your screen, it can also separate programs from the Unix shell that started the program, you can execute your program in tmux and then quit the shell, and the process will still running. if you want to check the output informations of the process, you can use `tmux attach` to enter former shell.
+tmux can not only divide your screen, it can also separate programs from the Unix shell that started the program, you can execute your program in tmux and then quit the shell, and the process will still running. if you want to check the output informations of the process, you can use `tmux attach` to enter former shell. If you attach a tmux which is running, operations will be synchronized, so it's a good way to show some operations to others.
 
 If you are in tmux, and you want to quit shell, you can use `ctrl+b+d` or `ctrl+b :detach` to quit tmux, and the process will still running, and you can do other things or quit remote shell. 
 
-`ctrl+b` is a command to enter `god mode`, to divide screen, to call out alarm clock and to do other things, you need to enter `god mode` first, and then type respective commands.
+`ctrl+b` is a command to enter `god mode`, to divide screen, to call out clock and to do other things, you need to enter `god mode` first, and then type respective commands.
 
 #### [there is a simple tutor to tmux](https://lukaszwrobel.pl/blog/tmux-tutorial-split-terminal-windows-easily/)
 

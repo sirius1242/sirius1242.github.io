@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: content
 title:  "linux tutor for newers"
 date:   2018-02-12 18:41:52 +0800
 categories: linux

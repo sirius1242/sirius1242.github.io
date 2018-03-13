@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: content
 title: from northeast to hefei
 date: 2018-02-17 19:35:18 +0800
 categories: summary

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: content
 title: from chem to cs
 date: 2018-02-15 23:36:00 +0800
 categories: summary

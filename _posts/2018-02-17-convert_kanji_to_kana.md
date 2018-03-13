@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: content
 title: convert kanji to kana
 date: 2018-02-17 18:28:33 +0800
 categories: sort_out
