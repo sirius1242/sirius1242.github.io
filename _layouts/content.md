@@ -12,7 +12,7 @@ ul.horizontal {
 		padding: 0;
 		position: fixed;
 		margin-left: -230px;
-		/*margin-right: 800px;*/
+		margin-right: 1000px;
 		top: 210px;
 		overflow: auto;
 		border: 1px;
