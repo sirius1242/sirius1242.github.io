@@ -4,7 +4,6 @@ title: some things I sorted out
 date: 2018-02-16 20:43:12 +0800
 categories: sort_out
 ---
-## [Back to home]({{ site.url }}/)
 # These are some things I sorted out, and wrote in pdf format by latex
 ##### (I put these on index.html originally)
 

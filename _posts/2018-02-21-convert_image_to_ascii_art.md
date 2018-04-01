@@ -4,7 +4,6 @@ title: convert image to ascii art
 date: 2018-02-21 15:48:07 +0800
 categories: python
 ---
-## [Back to home]({{ site.url }}/)
 
 # use python to convert image to ascii art
 

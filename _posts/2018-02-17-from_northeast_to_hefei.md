@@ -4,7 +4,6 @@ title: from northeast to hefei
 date: 2018-02-17 19:35:18 +0800
 categories: summary
 ---
-## [Back to home]({{ site.url }}/)
 # From northeast to Hefei
 ## ----some thought of studying and life in university.
 

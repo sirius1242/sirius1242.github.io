@@ -4,7 +4,6 @@ title: from chem to cs
 date: 2018-02-15 23:36:00 +0800
 categories: summary
 ---
-## [Back to home]({{ site.url }}/)
 # From chemistry to computer science
 ## -----some thought about my studying in the university
 Maybe I'm a so-called "study-like child" before, but I think the time I began to have interest on studying in the grade two of junior high school, and I love physics in that semester.

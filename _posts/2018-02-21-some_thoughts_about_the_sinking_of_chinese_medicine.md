@@ -4,7 +4,6 @@ title: some thoughts about the sinking of chinese medicine
 date: 2018-02-21 18:04:19 +0800
 categories: summary
 ---
-## [Back to home]({{ site.url }}/)
 
 # Some thought about the sinking of traditional Chinese medical science
 

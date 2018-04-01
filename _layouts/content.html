@@ -10,7 +10,7 @@ ul.horizontal {
 	background-color: #828282;
 	/*margin-left: -230px;*/
 	overflow: hidden;
-	box-shadow: 0px 2px 0px black;
+	box-shadow: 0px 2px 0px #202020;
 	/*border-color: #008888;
 		border-radius: 10px 10px 10px 10px;*/
 }
@@ -45,6 +45,17 @@ ul.horizontal li a:hover:not(.active) {
 ul.horizontal li a.active {
 	background-color:#4CAF50;
 }
+
+@media(max-width: 500px){
+	#scripts{
+		display: none;
+	}
+}
+@media(max-width: 400px){
+	#files{
+		display: none;
+	}
+}
 </style>
 </section>
 <div id="roll-fix" class="outer">
@@ -54,12 +65,11 @@ ul.horizontal li a.active {
 
 		<li style="padding: 50px;"></li>
 		<li style="padding: 50px;"></li-->
-		<li><a href='/script'>SCRIPTS</a></li>
-		<li><a href='{{ "/files.html" | absolute_url }}'>FILES</a></li>
-		<li><a href='{{ "/category/index.html" | absolute_url }}'>CATEGORIES</a></li>
-		<li><a href='{{ "/index.html" | absolute_url }}'>HOME</a></li>
-		<!--li id="logo"><img type="img/png" src='{{ "/favicon.png" | absolute_url }}' height=40pt border="0" /></li-->
-		<li id="logo"><object data='{{ "/assets/favicon.png" | absolute_url }}' type="image/png" width=40px ></object></li>
+		<li id="scripts"><a href='/script'>Scripts</a></li><!--
+		--><li id="files"><a href='{{ "/files.html" | absolute_url }}'>Files</a></li><!--
+		--><li><a href='{{ "/category/index.html" | absolute_url }}'>Category</a></li><!--
+		--><li><a href='{{ "/index.html" | absolute_url }}'>Home</a></li><!--
+		--><li id="logo"><object data='{{ "/assets/favicon.png" | absolute_url }}' type="image/png" width=40px ></object></li>
 		<!--li id="logo" style="padding: 15px 10px">Sirius' Blog</li-->
 	</ul>
 </div>

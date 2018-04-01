@@ -4,7 +4,6 @@ title: keep a remote process running
 date: 2018-03-08 12:09:14 +0800
 categories: linux
 ---
-## [Back to home]({{ site.url }}/)
 
 # How to keep a process running when you are in a remote shell like ssh?
 

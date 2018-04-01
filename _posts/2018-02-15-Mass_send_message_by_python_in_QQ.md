@@ -4,7 +4,6 @@ title: Mass send message by python in QQ
 date: 2018-02-15 21:54:03 +0800
 categories: python
 ---
-## [Back to home]({{ site.url }}/)
 # some experiences for sending QQ message by python
 I have many friends in QQ, so it's a tired job to send message to greet when the festival came. I saw a project not long ago for giving suggesstions to newers in the community group, and I contacted qqbot at that time: 
 ## [QQbot](https://github.com/pandolia/qqbot)

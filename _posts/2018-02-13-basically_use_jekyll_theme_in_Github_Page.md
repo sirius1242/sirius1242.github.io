@@ -4,7 +4,6 @@ title: basically use jekyll theme in Github Page
 date: 2018-02-13 12:52:16 +0800
 categories: sort_out
 ---
-## [Back to home]({{ site.url }}/)
 # basically tutor to use jekyll theme in Github Page
 ### if you don't have a Github Page, create it first.
 - create a repository with the name: username.github.io
@@ -52,7 +51,6 @@ these can found in [official website of jekyll](https://jekyllrb.com/docs/posts/
 
 - back to home link can realize by this:
 ```markdown
-[Back to home]({% raw %}{{ site.url }}{% endraw %}/)
 ```
 
 - you can use post.exerpt or post.content to show the exerpt of your post, and deal with it with the help of string filters of [liquid template](https://help.shopify.com/themes/liquid/filters/string-filters), here is my example:
