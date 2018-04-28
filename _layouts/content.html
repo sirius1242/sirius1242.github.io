@@ -46,6 +46,11 @@ ul.horizontal li a.active {
 	background-color:#4CAF50;
 }
 
+@media(max-width: 600px){
+	#wallpapers{
+		display: none;
+	}
+}
 @media(max-width: 500px){
 	#scripts{
 		display: none;
@@ -65,7 +70,8 @@ ul.horizontal li a.active {
 
 		<li style="padding: 50px;"></li>
 		<li style="padding: 50px;"></li-->
-		<li id="scripts"><a href='/script'>Scripts</a></li><!--
+		<li id="wallpapers"><a href='/bing-wallpaper-collect'>Wallpapers</a></li><!--
+		--><li id="scripts"><a href='/script'>Scripts</a></li><!--
 		--><li id="files"><a href='{{ "/files.html" | absolute_url }}'>Files</a></li><!--
 		--><li><a href='{{ "/category/index.html" | absolute_url }}'>Category</a></li><!--
 		--><li><a href='{{ "/index.html" | absolute_url }}'>Home</a></li><!--

@@ -2,7 +2,6 @@
 layout: content
 title: static files
 ---
-## [Back to home]({{ site.url }}/)
 
 # static pdf files
 
