@@ -1,0 +1,111 @@
+<head>
+    <meta charset="utf-8">
+    <title>2016去过的地方</title>
+</head>
+<body>
+
+    <div id="main" style="height:600px;width:900px;margin:20px auto;"></div>
+    <script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('main'));
+        var option = {
+            backgroundColor: '#1b1b1b',
+            color: ['gold', 'aqua', 'lime'],
+            title: {
+                text: '2016去过的地方',
+                subtext: '北京 昆明 西北 呼和浩特',
+                x: 'center',
+                textStyle: {
+                    color: '#fff'
+                }
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: '{b}'
+            },
+            dataRange: {
+                show:false,
+                min : 0,
+                max : 100,
+                calculable : true,
+                color: ['#ff3333', 'orange', 'yellow','lime','aqua'],
+                textStyle:{
+                    color:'#fff'
+                }
+            },
+            series: [{
+                name: '全国',
+                type: 'map',
+                roam: true,
+                hoverable: false,
+                mapType: 'china',
+                itemStyle: {
+                    normal: {
+                        borderColor: 'rgba(100,149,237,1)',
+                        borderWidth: 0.5,
+                        areaStyle: {
+                            color: '#1b1b1b'
+                        }
+                    }
+                },
+                data: [],
+
+                geoCoord: {"\u970d\u8425\u5730\u94c1\u7ad9": [116.36602029207549, 40.083036101787826], "\u4e3d\u6c5f": [100.22962839887937, 26.875351089481363], "\u5170\u5dde": [103.8233054407292, 36.06422552504259], "\u897f\u5b81": [101.76792098980276, 36.640738611957964], "\u5317\u4eac": [116.39564503787867, 39.92998577808024], "\u5f20\u6396": [100.45989186892419, 38.93932029698206], "\u5317\u4eac\u5317\u4eac": [116.39564503787867, 39.92998577808024], "\u5e73\u9065": [112.26549326017494, 37.14808977846167], "\u8336\u5361\u76d0\u6e56": [110.96193094165363, 35.0636768789324], "\u7941\u8fde": [99.71126292268251, 38.3279489359692], "\u9752\u6d77\u6e56": [117.94624541019371, 40.98026564956159], "\u94f6\u5ddd": [106.2064786078384, 38.50262101187604], "\u9999\u683c\u91cc\u62c9": [99.85507644287038, 27.86668082538727], "\u6566\u714c": [94.15804176645081, 40.38877149934441], "\u5e03\u8fbe\u62c9\u5bab": [119.41850868400249, 36.8543311610716], "\u5317\u6234\u6cb3": [119.47932079421292, 39.854292584186524], "\u6606\u660e": [102.71460113878045, 25.049153100453157], "\u547c\u548c\u6d69\u7279": [111.6603505200542, 40.828318873081585]}
+            }, {
+                name: '足迹',
+                type: 'map',
+                mapType: 'china',
+                data: [],
+                markLine: {
+                    smooth: true,
+                    effect: {
+                        show: true,
+                        scaleSize: 1,
+                        period: 30,
+                        color: '#fff',
+                        shadowBlur: 10
+                    },
+                    itemStyle: {
+                        normal: {
+                            borderWidth: 1,
+                            lineStyle: {
+                                type: 'solid',
+                                shadowBlur: 10
+                            },
+                            label:{
+                                show:false
+                            },
+
+                        }
+                    },
+
+                    data: [[{"name": "\u5317\u4eac"}, {"name": "\u5e73\u9065", "value": 72}], [{"name": "\u5e73\u9065"}, {"name": "\u5317\u4eac\u5317\u4eac", "value": 89}], [{"name": "\u5317\u4eac\u5317\u4eac"}, {"name": "\u6606\u660e", "value": 7}], [{"name": "\u6606\u660e"}, {"name": "\u4e3d\u6c5f", "value": 73}], [{"name": "\u4e3d\u6c5f"}, {"name": "\u9999\u683c\u91cc\u62c9", "value": 2}], [{"name": "\u9999\u683c\u91cc\u62c9"}, {"name": "\u4e3d\u6c5f", "value": 73}], [{"name": "\u4e3d\u6c5f"}, {"name": "\u6606\u660e", "value": 7}], [{"name": "\u6606\u660e"}, {"name": "\u5317\u4eac", "value": 20}], [{"name": "\u970d\u8425\u5730\u94c1\u7ad9"}, {"name": "\u5e03\u8fbe\u62c9\u5bab", "value": 23}], [{"name": "\u5317\u4eac"}, {"name": "\u5317\u6234\u6cb3", "value": 57}], [{"name": "\u5317\u6234\u6cb3"}, {"name": "\u5317\u4eac", "value": 96}], [{"name": "\u5317\u4eac"}, {"name": "\u5170\u5dde", "value": 83}], [{"name": "\u5170\u5dde"}, {"name": "\u6566\u714c", "value": 59}], [{"name": "\u6566\u714c"}, {"name": "\u5f20\u6396", "value": 82}], [{"name": "\u5f20\u6396"}, {"name": "\u7941\u8fde", "value": 33}], [{"name": "\u7941\u8fde"}, {"name": "\u897f\u5b81", "value": 92}], [{"name": "\u897f\u5b81"}, {"name": "\u9752\u6d77\u6e56", "value": 64}], [{"name": "\u9752\u6d77\u6e56"}, {"name": "\u8336\u5361\u76d0\u6e56", "value": 8}], [{"name": "\u8336\u5361\u76d0\u6e56"}, {"name": "\u897f\u5b81", "value": 92}], [{"name": "\u897f\u5b81"}, {"name": "\u94f6\u5ddd", "value": 42}], [{"name": "\u94f6\u5ddd"}, {"name": "\u547c\u548c\u6d69\u7279", "value": 87}], [{"name": "\u547c\u548c\u6d69\u7279"}, {"name": "\u5317\u4eac", "value": 71}]]
+                },
+                markPoint: {
+                    symbol: 'emptyCircle',
+                    symbolSize: function(v) {
+                        return 10 + v / 10
+                    },
+                    effect: {
+                        show: true,
+                        shadowBlur: 0
+                    },
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: false
+                            }
+                        },
+                        emphasis: {
+                            label: {
+                                position: 'top'
+                            }
+                        }
+                    },
+                    data: [{"name": "\u970d\u8425\u5730\u94c1\u7ad9", "value": 66}, {"name": "\u4e3d\u6c5f", "value": 73}, {"name": "\u5170\u5dde", "value": 83}, {"name": "\u897f\u5b81", "value": 92}, {"name": "\u5317\u4eac", "value": 71}, {"name": "\u5f20\u6396", "value": 82}, {"name": "\u5317\u4eac\u5317\u4eac", "value": 89}, {"name": "\u5e73\u9065", "value": 72}, {"name": "\u8336\u5361\u76d0\u6e56", "value": 8}, {"name": "\u7941\u8fde", "value": 33}, {"name": "\u9752\u6d77\u6e56", "value": 64}, {"name": "\u94f6\u5ddd", "value": 42}, {"name": "\u9999\u683c\u91cc\u62c9", "value": 2}, {"name": "\u6566\u714c", "value": 59}, {"name": "\u5e03\u8fbe\u62c9\u5bab", "value": 23}, {"name": "\u5317\u6234\u6cb3", "value": 57}, {"name": "\u6606\u660e", "value": 7}, {"name": "\u547c\u548c\u6d69\u7279", "value": 87}]
+                }
+            }]
+        };
+        myChart.setOption(option);
+    </script>
+</body>
