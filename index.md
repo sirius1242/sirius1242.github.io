@@ -1,7 +1,8 @@
 ---
 layout: content
 ---
-## Welcome to My GitHub Pages
+<div style="float: right"><a href="{{ site.url }}/feed.xml" style="font-size: 20px" >RSS</a></div>
+## Welcome to My GitHub Pages 
 
 ### These are my essays[^1]:
 

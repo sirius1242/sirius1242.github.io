@@ -15,7 +15,7 @@ chmod +x create_post.sh
 and it will create a file with filename `_posts/2018-02-13-file_to_create.md`, and add the YAML Front Matter in the head of file:
 ```markdown
 ---
-layout: default
+layout: content
 title: file to create
 date: 2018-02-13 12:39:30 +0800
 categories: 
