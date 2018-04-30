@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+</section>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <style>
 ul.horizontal {
@@ -33,21 +34,26 @@ ul.horizontal li {
 ul.horizontal li a {
 	display: block;
 	color: black;
-	padding: 14px 20px;
+	padding: 16px 20px;
 	text-decoration: none;
 }
 
 
 ul.horizontal li a:hover:not(.active) {
-	background-color: #606060;
-	padding: 14px 20px;
+	/*background-color: #606060;*/
+	font-weight: bold;
+	padding: 16px 20px;
+	box-shadow: 0px 2px 0px #0366d6;
 }
 
 ul.horizontal li a.active {
 	background-color:#4CAF50;
 }
 
-#roll-fix { margin-top: -60px; }
+#roll-fix { 
+	margin-top: -60px;
+	z-index: 35;
+}
 
 @media(max-width: 600px){
 	#wallpapers{
@@ -65,7 +71,6 @@ ul.horizontal li a.active {
 	}
 }
 </style>
-</section>
 <div id="roll-fix" class="outer">
 	<ul class="horizontal">
 		<!--li style="float: left; padding: 50px 0px; text-align: center;"><a href='{{ "/index.html" | absolute_url }}'><span style="font-size: 50px;">&#127968;</span></br> home</a></li>
@@ -82,7 +87,7 @@ ul.horizontal li a.active {
 		<!--li id="logo" style="padding: 15px 10px">Sirius' Blog</li-->
 	</ul>
 </div>
-<section id="main_content" class="inner">
+<section id="main_content1" class="inner">
 
 	{{ content }}
 
@@ -93,7 +98,7 @@ $(window).scroll(function () {
 	if ($(window).scrollTop() > elementPosition.top) {
 		$('#roll-fix').css('position', 'fixed').css('margin-top', '0px').css('top', '0').css('width', '100%');
 	} else {
-		$('#roll-fix').css('position', 'static').css('margin-top', '-60px').css('z-index', '10');
+		$('#roll-fix').css('position', 'relative').css('margin-top', '-60px');
 	}
 });
 </script>
