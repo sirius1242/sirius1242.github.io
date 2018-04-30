@@ -7,10 +7,10 @@ ul.horizontal {
 	list-style-type: none;
 	text-align: center;
 	/*background-color: #3399CC;*/
-	background-color: #828282;
+	background-color: #f2f2f2;
 	/*margin-left: -230px;*/
 	overflow: hidden;
-	box-shadow: 0px 2px 0px #202020;
+	box-shadow: 0px 1px 0px #202020;
 	/*border-color: #008888;
 		border-radius: 10px 10px 10px 10px;*/
 }
@@ -37,6 +37,7 @@ ul.horizontal li a {
 	text-decoration: none;
 }
 
+
 ul.horizontal li a:hover:not(.active) {
 	background-color: #606060;
 	padding: 14px 20px;
@@ -45,6 +46,8 @@ ul.horizontal li a:hover:not(.active) {
 ul.horizontal li a.active {
 	background-color:#4CAF50;
 }
+
+#roll-fix { margin-top: -60px; }
 
 @media(max-width: 600px){
 	#wallpapers{
@@ -88,9 +91,9 @@ ul.horizontal li a.active {
 	var elementPosition = $('#roll-fix').offset();
 $(window).scroll(function () {
 	if ($(window).scrollTop() > elementPosition.top) {
-		$('#roll-fix').css('position', 'fixed').css('top', '0').css('width', '100%');
+		$('#roll-fix').css('position', 'fixed').css('margin-top', '0px').css('top', '0').css('width', '100%');
 	} else {
-		$('#roll-fix').css('position', 'static').css('top', '100px').css('z-index', '10');
+		$('#roll-fix').css('position', 'static').css('margin-top', '-60px').css('z-index', '10');
 	}
 });
 </script>

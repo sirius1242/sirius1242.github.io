@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: content
 title: The establishment of repoistory bing-wallpaper-collect
 date: 2018-04-28 22:39:03 +0800
 categories: sort_out

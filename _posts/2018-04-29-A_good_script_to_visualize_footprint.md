@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: content
 title: A good script to visualize footprint
 date: 2018-04-29 20:43:52 +0800
-categories: 
+categories: python
 ---
 
 # Visualization of footprint
