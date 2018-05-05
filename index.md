@@ -1,14 +1,14 @@
 ---
 layout: content
 ---
-<div style="float: right"><a href="{{ site.url }}/feed.xml" style="font-size: 20px" >RSS</a></div>
+<div style="float: right"><a href="{{ site.url }}/feed.xml" style="font-size: 20px" ><blockquote>RSS</blockquote></a></div>
 ## Welcome to My GitHub Pages 
 
 ### These are my essays[^1]:
 
 <!--[<span style="font-size: 36px;">&#128188; categories</span>]({{ site.url }}/category/)-->
 <!--div style="background-color: #FFFFFF; padding: 10px 20px"-->
-<ul>
+<ul id="posts">
   {% for post in site.posts %}
     <h1>
       <a href="{{ post.url }}">{{ post.title }}</a>
@@ -16,7 +16,7 @@ layout: content
     &#128193; {{ post.categories }} &emsp; &#128197; {{ post.date }}<br>
 		<details open style="display: inline-block; padding: 0px 5px; background-color:#f2f2f2; box-shadow: 3px 3px 4px black; border-radius: 5px 5px 5px 5px;">
 		<summary >click to hide excerpt</summary>
-   {{ post.content | replace: "</h1>", " | " | strip_html | remove: "Back to home" | replace: " | ", "<br>" | truncatewords: 50}}
+   {{ post.content | replace: "</h1>", " | " | replace: "</h2>", " | " | strip_html | replace: " | ", "<br>" | truncatewords: 50}}
 	 </details>
 {{ "---" | markdownify }}
   {% endfor %}
