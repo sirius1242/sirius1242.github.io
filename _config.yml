@@ -6,8 +6,6 @@ jekyll-archives:
   enabled:
     -categories
     -tags
-plugins:
-    - jekyll-feed
 defaults:
   - scope:
       path: "file"

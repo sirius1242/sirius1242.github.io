@@ -1,0 +1,77 @@
+<head>
+    <style>
+    .vertical-center {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+    }
+    .flip3D{
+        width:315px; height:315px; margin:10px; float:center; margin: auto;
+        cursor: pointer;
+
+    }
+    .flip3D > .front_face{
+        
+        border-radius: 5px;
+        border-width: 5px;
+        border-color: #00274c;
+        border-style: solid;
+        background: rgba(0,0,0,0.0);
+        position:absolute;
+        -webkit-transform: perspective( 600px ) rotateY( 0deg );
+                transform: perspective( 600px ) rotateY( 0deg );
+        width:275px; height:275px;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        -webkit-transition:-webkit-transform .5s linear 0s;
+        transition:-webkit-transform .5s linear 0s;
+        transition:transform .5s linear 0s;
+        transition: transform .5s linear 0s, -webkit-transform .5s linear 0s;
+        box-shadow: 0 15px 50px rgba(0,0,0,0.0);
+        float: center;
+    }
+    .flip3D > .back_face{
+        overflow: hidden;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        border-width: 5px;
+        border-radius: 5px;
+        border-color: #00274c;
+        background: rgba(0,0,0,0.0);
+        border-style: solid;
+        position:absolute;
+        -webkit-transform: perspective( 700px ) rotateY( 180deg );
+                transform: perspective( 700px ) rotateY( 180deg );
+        width:275px; height:275px;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        -webkit-transition:-webkit-transform .5s linear 0s;
+        transition:-webkit-transform .5s linear 0s;
+        transition:transform .5s linear 0s;
+        transition: transform .5s linear 0s, -webkit-transform .5s linear 0s;
+        box-shadow: 0 15px 50px rgba(0,0,0,0.0);
+    }
+    .flip3D:hover > .front_face{
+        -webkit-transform: perspective( 700px ) rotateY( -180deg );
+                transform: perspective( 700px ) rotateY( -180deg );
+    }
+    .flip3D:hover > .back_face{
+        -webkit-transform: perspective( 700px ) rotateY( 0deg );
+                transform: perspective( 700px ) rotateY( 0deg );
+    }
+    </style>
+</head>
+
+<body>
+        <div class="flip3D" onclick="location.href='https://sirius1242.github.io'">
+            <div class="back_face">
+                <!--p class="vertical-center" style="font-size:14pt; text-align: center">Click to return home!</p-->
+                <p style="text-align: center">Click to return home!</p>
+                <img src="https://sirius1242.github.io/assets/favicon.png" style="width: 150px; margin: auto; display: block; border-width: 0;" class="vertical-center">
+            </div>
+            <div class="front_face">
+                <p class="vertical-center" style="font-size:14pt; text-align: center;">hover to check the content back</p>
+            </div>
+            </div>
+</body>
