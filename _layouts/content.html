@@ -64,6 +64,7 @@ ul.horizontal li a.active {
 #roll-fix { 
 	margin-top: -60px;
 	z-index: 10;
+	position: relative;
 }
 
 @media(max-width: 650px){
@@ -84,17 +85,12 @@ ul.horizontal li a.active {
 </style>
 <div id="roll-fix" class="outer">
 	<ul class="horizontal">
-		<!--li style="float: left; padding: 50px 0px; text-align: center;"><a href='{{ "/index.html" | absolute_url }}'><span style="font-size: 50px;">&#127968;</span></br> home</a></li>
-		<li style="float: right; padding: 50px 0px; text-align: center;"><a href='{{ "/category/index.html" | absolute_url }}'><span style="font-size: 50px;">&#128188;</span></br> category</a></li>
-
-		<li style="padding: 50px;"></li>
-		<li style="padding: 50px;"></li-->
 		<li id="wallpapers"><a href='/bing-wallpaper-collect'>Wallpapers</a></li><!--
 		--><li id="scripts"><a href='/script'>Scripts</a></li><!--
 		--><li id="files"><a href='{{ "/files.html" | absolute_url }}'>Files</a></li><!--
 		--><li><a href='{{ "/category/index.html" | absolute_url }}'>Category</a></li><!--
-		--><li><a href='{{ "/index.html" | absolute_url }}'>Home</a></li><!--
-		--><li id="logo"><object id="picture" data='{{ "/assets/favicon.png" | absolute_url }}' type="image/png" width=40px ></object></li>
+		--><li><a href='{{ "/blog.html" | absolute_url }}'>Blog</a></li><!--
+		--><li id="logo"><a href='{{ "/index.html" | absolute_url }}'><object id="picture" data='{{ "/assets/favicon.png" | absolute_url }}' type="image/png" width=40px ></object></a></li>
 		<!--li id="logo" style="padding: 15px 10px">Sirius' Blog</li-->
 	</ul>
 </div>

@@ -1,78 +1,72 @@
 ---
-layout: content
----
-<div style="float: right"><a href="{{ site.url }}/feed.xml" style="font-size: 20px" ><blockquote>RSS</blockquote></a></div>
-## Welcome to My GitHub Pages 
-
-### These are my essays[^1]:
-
-<!--[<span style="font-size: 36px;">&#128188; categories</span>]({{ site.url }}/category/)-->
-<!--div style="background-color: #FFFFFF; padding: 10px 20px"-->
-<ul id="posts">
-  {% for post in site.posts %}
-    <h1>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </h1>
-    &#128193; {{ post.categories }} &emsp; &#128197; {{ post.date }}<br>
-		<details open style="display: inline-block; padding: 0px 5px; background-color:#f2f2f2; box-shadow: 3px 3px 4px black; border-radius: 5px 5px 5px 5px;">
-		<summary >click to hide excerpt</summary>
-   {{ post.content | replace: "</h1>", " | " | replace: "</h2>", " | " | strip_html | replace: " | ", "<br>" | truncatewords: 50}}
-	 </details>
-{{ "---" | markdownify }}
-  {% endfor %}
-</ul>
-
-[^1]: No comment function added, so if you have any advice, you can open issue to my github repo:[https://github.com/sirius1242/sirius1242.github.io/issues](https://github.com/sirius1242/sirius1242.github.io/issues). And I'm not a native English speaker, hope you forgive my poor English.
-
-<details>
-<summary style="background-color: #ddd;box-shadow: 3px 3px 4px black;list-style: none; border-radius: 10px 10px 10px 10px">
-<center>
-{{ "
-### &#128211; There are some things about Jekyll Themes and markdown
-
-" | markdownify }}
-</center>
-</summary>
-<div style="background-color: #ddd; box-shadow: 3px 3px 4px black;border-radius: 0 0 10px 10px;">
-{{ "
-My pages are using slate theme, which is an Jekyll Theme, and Jekyll Theme use markdown
-
-You can use the [editor on GitHub](https://github.com/sirius1242/sirius1242.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for syntax highlighted code block
-
-	```markdown
-
-	# Header 1
-	## Header 2
-	### Header 3
-
-	- Bulleted
-	- List
-
-	1. Numbered
-	2. List
-
-	**Bold** and _Italic_ and `Code` text
-
-	[Link](url) and ![Image](src)
-	```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sirius1242/sirius1242.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-
+layout: default
 ---
 
-" | markdownify }}
+<style>
+ul.horizontal {
+	list-style-type: none;
+	text-align: right;
+	background-color: #f2f2f2;
+	overflow: hidden;
+    position: static;
+    /*float: left;*/
+    margin-right: 30px;
+    height: 100%;
+    width: 150px;
+	box-shadow: 0px 0px 0px 0px #0366d6;
+    /*border-radius: 10px 10px 10px 10px;*/
+}
+ul.horizontal li {
+    font-size: 20px;
+    display: block;
+    border: none;
+}
+ul.horizontal li a {
+	display: block;
+	color: black;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+ul.horizontal li a:hover:not(.active) {
+	/*background-color: #606060;*/
+	font-weight: bold;
+	padding: 5px 10px;
+    display: inline-block;
+    background-color: #606060;
+    border-radius: 2px 2px 2px 2px;
+}
+</style>
+
+<div style="float: left; width:30%; overflow-y: hidden;">
+    <ul class="horizontal">
+        <!--li id="logo"><a href='{{ "/index.html" | absolute_url }}'><object id="picture" data='{{ "/assets/favicon.png" | absolute_url }}' type="image/png" width="60px" ></object></a></li-->
+        <li id="logo"><a href='{{ "/index.html" | absolute_url }}'><object id="picture" data='{{ "assets/favicon.png" | absolute_url }}' type="image/png" width="60px" ></object></a></li><!--
+        --><li id="blogs"><a href='{{ "/blog.html" | absolute_url }}'>Blog</a></li><!--
+        --><li><a href='{{ "/category/index.html" | absolute_url }}'>Category</a></li><!--
+        --><li id="files"><a href='{{ "/files.html" | absolute_url }}'>Files</a></li><!--
+        --><li id="scripts"><a href='/script'>Scripts</a></li><!--
+        --><li id="wallpapers"><a href='/bing-wallpaper-collect'>Wallpapers</a></li>
+    </ul>
 </div>
-</details>
+
+<div style="width: 70%; position: static; display: inline-block; margin-bottom: 0px;">
+<h1> Welcome to Sirius' Home </h1>
+
+<!--object id="picture" data='{{ "/assets/favicon.png" | absolute_url }}' type="image/png" width="200px" ></object-->
+<span style="float: right">This is my home page.</span>
+
+<h3>Latest blog:</h3>
+{% assign post = site.posts[0] %}
+<h2>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+</h2>
+&#128193; {{ post.categories }} &emsp; &#128197; {{ post.date }}<br>
+{{ post.content | replace: "</h1>", " | " | replace: "</h2>", " | " | strip_html | replace: " | ", "<br>" | truncatewords: 50}}
+{{ "---" | markdownify }}
+
+
+</div>
+<script type="text/javascript">
+    document.getElementById('project_title').textContent="Sirius' Home";
+    document.title="Sirius’ Home";
+</script>
