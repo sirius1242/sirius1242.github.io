@@ -35,6 +35,20 @@ ul.horizontal li a:hover:not(.active) {
     background-color: #606060;
     border-radius: 2px 2px 2px 2px;
 }
+#logo a:hover:not(.active){
+    background-color: #00ff88;
+    width: 70px;
+    border-radius: 100px 10px 10px 100px;
+}
+#picture {
+	-webkit-transition: -webkit-transform 1.6s ease-in-out;
+			transition: 		transform 1.6s ease-in-out;
+}
+
+#picture:hover {
+	-webkit-transform: rotate(720deg);
+			transform: rotate(720deg);
+}
 </style>
 
 <div style="float: left; width:30%; overflow-y: hidden;">

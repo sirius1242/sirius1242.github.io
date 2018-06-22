@@ -2,6 +2,7 @@
 layout: content
 title: some things I sorted out
 date: 2018-02-16 20:43:12 +0800
+permalink: /file_intro
 categories: sort_out
 ---
 # These are some things I sorted out, and wrote in pdf format by latex
