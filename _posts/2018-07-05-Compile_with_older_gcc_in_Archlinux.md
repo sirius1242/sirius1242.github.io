@@ -18,7 +18,9 @@ compilation always fail
 
 ## Solution
 
-So I come up with using a different version of gcc when compile. However, I didn't find how to appoint gcc version in `bam.lua`. Firstly, I installed `community/gcc54` with `pacman`, `gcc54` is in version 5.4.1 now. And what if link `gcc-5` and `g++-5` to local directory? And I also set `PATH=.:$PATH bam config` and `PATH=.:$PATH bam server_release` to make it call local command first when compile with bam. And it works! So I directly add `PATH=.:$PATH` in my zshrc, so I can directly use this way in future.
+So I come up with using a different version of gcc when compile. However, I didn't find how to appoint gcc version in `bam.lua`. Firstly, I installed `community/gcc54` with `pacman`, `gcc54` is in version 5.4.1 now. And what if link `gcc-5` and `g++-5` to local directory? And I also set `PATH=.:$PATH bam config` and `PATH=.:$PATH bam server_release` to make it call local command first when compile with bam. And it works! So I directly add `PATH=.:$PATH` in my zshrc, so I can directly use this way in future. (don't forget to clean binaries former by `bam -c all`)
+
+<object id="failure" data='{{ "/assets/deathmatch.svg" | absolute_url }}' type="image/svg"></object>
 
 I think make can also use this way, but you can directly modify `Makefile` , and add `CC="gcc-5"` or directly use `make CC=gcc-5`, it will directly solve this problem.
 
