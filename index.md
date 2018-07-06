@@ -113,6 +113,7 @@ ul.horizontal li a:hover:not(.active) {
 	//document.getElementById('header_wrap').style.backgroundImage = "url('https://cn.bing.com/az/hprichbg/rb/KissingPandas_ZH-CN8379279685_1920x1080.jpg')" 
 	document.getElementById('header_wrap').style.backgroundImage = "url('{{ "/assets/background.jpg" | absolute_url }}')" ;
 	document.getElementById('header_wrap').style.backgroundSize = "cover";
+	document.getElementsByTagName('header')[0].style.paddingTop="20%";
 	//document.getElementById('header_wrap').style.height = "50vh"
 	document.getElementById('forkme_banner').style.display="none";
 	$(function() {
