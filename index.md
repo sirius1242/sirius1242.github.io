@@ -3,6 +3,23 @@ layout: default
 ---
 
 <style>
+.inner {
+	/*max-width: 70%;*/
+	max-width: 670px;
+}
+
+.head_image {
+	/*background-image: url("https://cn.bing.com/az/hprichbg/rb/KissingPandas_ZH-CN8379279685_1920x1080.jpg");*/
+	/*background-image: url('{{ "/assets/background.jpg" | absolute_url }}');*/
+	width: 100%;
+	height: 100vh;
+}
+
+/*header {
+	background-color: #000000;
+	opacity: 0.5;
+	width: 100%;
+}*/
 ul.horizontal {
 	list-style-type: none;
 	text-align: right;
@@ -51,6 +68,7 @@ ul.horizontal li a:hover:not(.active) {
 }
 </style>
 
+<!--div style="width:100vw; height:50px"-->
 <div style="float: left; width:30%; overflow-y: hidden;">
     <ul class="horizontal">
         <!--li id="logo"><a href='{{ "/index.html" | absolute_url }}'><object id="picture" data='{{ "/assets/favicon.png" | absolute_url }}' type="image/png" width="60px" ></object></a></li-->
@@ -63,14 +81,22 @@ ul.horizontal li a:hover:not(.active) {
     </ul>
 </div>
 
-<div style="width: 70%; position: static; display: inline-block; margin-bottom: 0px;">
+<div style="width: 70%; position: static; display: inline-block; margin-bottom: 0px; ">
 <h1> Welcome to Sirius' Home </h1>
 
 <!--object id="picture" data='{{ "/assets/favicon.png" | absolute_url }}' type="image/png" width="200px" ></object-->
 <span style="float: right">This is my home page.</span>
 
-<h3>Latest blog:</h3>
+<h3>Latest blogs:</h3>
 {% assign post = site.posts[0] %}
+<h2>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+</h2>
+&#128193; {{ post.categories }} &emsp; &#128197; {{ post.date }}<br>
+{{ post.content | replace: "</h1>", " | " | replace: "</h2>", " | " | strip_html | replace: " | ", "<br>" | truncatewords: 50}}
+{{ "---" | markdownify }}
+
+{% assign post = site.posts[1] %}
 <h2>
     <a href="{{ post.url }}">{{ post.title }}</a>
 </h2>
@@ -80,7 +106,27 @@ ul.horizontal li a:hover:not(.active) {
 
 
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript">
     document.getElementById('project_title').textContent="Sirius' Home";
     document.title="Sirius’ Home";
+	//document.getElementById('header_wrap').style.backgroundImage = "url('https://cn.bing.com/az/hprichbg/rb/KissingPandas_ZH-CN8379279685_1920x1080.jpg')" 
+	document.getElementById('header_wrap').style.backgroundImage = "url('{{ "/assets/background.jpg" | absolute_url }}')" ;
+	document.getElementById('header_wrap').style.backgroundSize = "cover";
+	//document.getElementById('header_wrap').style.height = "50vh"
+	document.getElementById('forkme_banner').style.display="none";
+	$(function() {
+		var header = $("#header_wrap");
+		header.removeClass('outer').addClass('head_image');
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+
+			if (scroll >= 0.1 * $(window).width()) {
+				header.removeClass('head_image').addClass('outer');
+			}
+			else {
+				header.removeClass('outer').addClass('head_image');
+			}
+		});
+	});
 </script>
