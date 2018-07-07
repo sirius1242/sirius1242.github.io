@@ -49,6 +49,7 @@ ul.horizontal li a:hover:not(.active) {
 	font-weight: bold;
 	padding: 5px 10px;
     display: inline-block;
+	margin-left: 0px;
     background-color: #606060;
     border-radius: 2px 2px 2px 2px;
 }
@@ -69,7 +70,7 @@ ul.horizontal li a:hover:not(.active) {
 </style>
 
 <!--div style="width:100vw; height:50px"-->
-<div style="float: left; width:30%; overflow-y: hidden;">
+<div style="float: left; width:30%; overflow: hidden;">
     <ul class="horizontal">
         <!--li id="logo"><a href='{{ "/index.html" | absolute_url }}'><object id="picture" data='{{ "/assets/favicon.png" | absolute_url }}' type="image/png" width="60px" ></object></a></li-->
         <li id="logo"><a href='{{ "/index.html" | absolute_url }}'><object id="picture" data='{{ "assets/favicon.png" | absolute_url }}' type="image/png" width="60px" ></object></a></li><!--
