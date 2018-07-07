@@ -111,7 +111,7 @@ ul.horizontal li a:hover:not(.active) {
     document.getElementById('project_title').textContent="Sirius' Home";
     document.title="Sirius’ Home";
 	//document.getElementById('header_wrap').style.backgroundImage = "url('https://cn.bing.com/az/hprichbg/rb/KissingPandas_ZH-CN8379279685_1920x1080.jpg')" 
-	document.getElementById('header_wrap').style.backgroundImage = "url('{{ "/assets/background.jpg" | absolute_url }}')" ;
+	//document.getElementById('header_wrap').style.backgroundImage = "url('{{ "/assets/background.jpg" | absolute_url }}')" ;
 	document.getElementById('header_wrap').style.backgroundSize = "cover";
 	document.getElementsByTagName('header')[0].style.paddingTop="20%";
 	//document.getElementById('header_wrap').style.height = "50vh"
@@ -119,14 +119,17 @@ ul.horizontal li a:hover:not(.active) {
 	$(function() {
 		var header = $("#header_wrap");
 		header.removeClass('outer').addClass('head_image');
+		header.css("background-image", "url('{{ "/assets/background.jpg" | absolute_url }}')");
 		$(window).scroll(function() {
 			var scroll = $(window).scrollTop();
 
-			if (scroll >= 0.1 * $(window).width()) {
+			if (scroll >= 0.15 * $(window).width()) {
 				header.removeClass('head_image').addClass('outer');
+				header.css("background-image", "");
 			}
 			else {
 				header.removeClass('outer').addClass('head_image');
+				header.css("background-image", "url('{{ "/assets/background.jpg" | absolute_url }}')");
 			}
 		});
 	});
