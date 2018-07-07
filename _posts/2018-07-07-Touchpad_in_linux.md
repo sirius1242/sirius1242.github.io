@@ -2,7 +2,7 @@
 layout: content
 title: Touchpad in linux
 date: 2018-07-07 10:44:36 +0800
-categories: 
+categories: linux
 ---
 
 # Touchpad configure in linux

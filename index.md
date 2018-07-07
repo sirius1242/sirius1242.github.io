@@ -70,7 +70,7 @@ ul.horizontal li a:hover:not(.active) {
 </style>
 
 <!--div style="width:100vw; height:50px"-->
-<div style="float: left; width:30%; overflow: hidden;">
+<div style="float: left; width:30%; overflow: auto; direction: rtl;">
     <ul class="horizontal">
         <!--li id="logo"><a href='{{ "/index.html" | absolute_url }}'><object id="picture" data='{{ "/assets/favicon.png" | absolute_url }}' type="image/png" width="60px" ></object></a></li-->
         <li id="logo"><a href='{{ "/index.html" | absolute_url }}'><object id="picture" data='{{ "assets/favicon.png" | absolute_url }}' type="image/png" width="60px" ></object></a></li><!--
