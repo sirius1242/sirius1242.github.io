@@ -2,7 +2,7 @@
 layout: content
 title: Use windows software in linux 
 date: 2018-07-08 12:38:08 +0800
-categories: 
+categories: linux
 ---
 
 # How to use windows software in linux?
