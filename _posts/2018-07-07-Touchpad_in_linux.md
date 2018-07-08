@@ -33,6 +33,8 @@ EndSection
 ```
 Because I always touch touchpad inadvertently when typing, so I forbade tap of one fingers, and mapped tap of two fingers to left click.
 
+You can use `synclient -l` to check all configures, and you can use `synclient <option> <value>` to temporarily adjust the options, it will disappear affter you reboot.
+
 I gave some meanings of config items in comments, if you want to know in detail, you can man it
 
 ![synaptics]({{ "/assets/synaptics.svg" | absolute_url }})
@@ -41,9 +43,11 @@ This is the basic configuration of touchpad.
 
 ## [libinput-gestures](https://wiki.archlinux.org/index.php/Libinput#libinput-gestures)
 
-libinput-gestures only support swipe of 3 or 4 fingers and pinch, however, it's enough.
+Libinput-gestures only support swipe of 3 or 4 fingers and pinch, however, it's enough.
 
-my configure file is like this (I remove the comment parts):
+You need to install `libinput-gestures` package, and add yourself to group `input`.
+
+My configure file is like this (I remove the comment parts):
 
 ```sh
 gesture swipe up 3      _internal ws_up
@@ -66,6 +70,7 @@ gesture pinch out       xdotool key ctrl+equal
 
 It use xdotool to map gestures with shortcut. It also works for some functions to your desktop, and you can view the comments of configure file for detail.
 
+After every config file modification, you need to execute `libinput-gestures-setup restart` to reload the config file.
 ## Summary
 
 Some times we view pdf documents or surf internet with browser, we always turn pages, and our hand always stay on touchpad, so if you can do these frequently-used events directly on touchpad, it will be convenient and efficient.
