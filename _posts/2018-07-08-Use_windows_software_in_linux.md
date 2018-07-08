@@ -55,6 +55,8 @@ I use Windows 7 with virtual disk allocate in fixed size, and it may run faster.
 
 ### Boot your dual system of Windows in VirtualBox
 
+[reference](https://superuser.com/questions/495025/use-physical-harddisk-in-virtual-box)
+
 Sometimes you work in a team, and you need to unify the environment, you have to use some softwares which can only installed in Windows 10 or higher version, and you need to use virtual machine of Windows 10 now.
 
 I'm in a similar situation now, and I decided to use my local dual system of Windows 10 in VirtualBox.
@@ -71,6 +73,9 @@ VBoxManage internalcommands createrawvmdk \
 
 - You can also change the mode of vmdk, for example: you can set writethrough to vmdk, then you can do modification in that partition in your virtual machine.
 ![virtualdisk]({{ "/assets/virtualdisk.png" | absolute_url }})
+- And don't forget to enable EFI boot in your Virtual Machine settings.
+
+Because I use UEFI boot, so this is the tutor of Windows with UEFI boot, I think legacy boot should not too far away from this.
 
 ## Boot your dual system of Windows?
 
