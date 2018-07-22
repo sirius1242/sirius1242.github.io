@@ -23,7 +23,7 @@ Wine is a compatibility layer capable of running Microsoft Windows applications 
 
 wine is open-source, so you may found it in your offical repository, if not, you can download version of your distribution and install it.
 
-Some period ago, wine is not good, I'm a Chinese, and sometimes it can't show all Chinese characters correctly, so I gave up. It seems wine is a lot batter now, so you can have a try.
+Some period ago, wine is not good, I'm a Chinese, and sometimes it can't show all Chinese characters correctly, so I gave up. It seems wine is much batter now, so you can have a try.
 
 ## [CrossOver](https://en.wikipedia.org/wiki/CrossOver_(software))
 
@@ -41,7 +41,7 @@ Appimage can be directly executed because it packed the dependences and other th
 
 ## [Virtual Machine](https://en.wikipedia.org/wiki/Virtual_machine)
 
-Some people things virtual machine is very slow. Yes, it can only use part of your system resources, and it also need to convert the instructions sent by your application from guest to host. However, if your computer is not too bad, and you chose a light guest os, it performance good.
+Some people thought virtual machine is very slow. Yes, it can only use part of your system resources, and it also need to convert the instructions sent by your application from guest to host. However, if your computer is not too bad, and you chose a light guest os, it performance good.
 
 I use [VirtualBox](https://wiki.archlinux.org/index.php/VirtualBox), you can also try VMWare.
 

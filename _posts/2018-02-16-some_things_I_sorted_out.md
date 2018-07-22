@@ -9,7 +9,7 @@ categories: sort_out
 ##### (I put these on index.html originally)
 
 ---
-> ### this is a file with some tips:
+> ### this is a file with the tips I collected when using linux:
 > [tips.pdf]({{ "/file/tips.pdf" | absolute_url }})
 
 --- 
