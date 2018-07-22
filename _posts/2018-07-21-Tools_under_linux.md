@@ -22,9 +22,9 @@ Inkscape is also a powerful tool, but it is for processing vector drawings. You 
 
 ![inkscape]({{ "/assets/inkscape-shot.png" | absolute_url }})
 
-### [Imagemagick](https://www.imagemagick.org/script/index.php)
+### [ImageMagick](https://www.ImageMagick.org/script/index.php)
 
-Imagemagick is a commandline tool, it nearly have no graphic interface, so it may be difficult to use at first. However, it can accurately cut, draw and do other operations by the coordinate, and it's also convenient to do some simple operations, such as reverse the color, convert the format, make a gif with many pictures and so on, I usually use these commands, but if I need to do some complex operations, I will change to other tool considering the time cost (I need to look up the manual or Google to get the command arguments, it may be time costing). I have a repository called [imagemagick-note](https://github.com/sirius1242/imagemagick-note), there are arguments of a few simple operations.
+ImageMagick is a commandline tool, it nearly have no graphic interface, so it may be difficult to use at first. However, it can accurately cut, draw and do other operations by the coordinate, and it's also convenient to do some simple operations, such as reverse the color, convert the format, make a gif with many pictures and so on, I usually use these commands, but if I need to do some complex operations, I will change to other tool considering the time cost (I need to look up the manual or Google to get the command arguments, it may be time costing). I have a repository called [ImageMagick-note](https://github.com/sirius1242/ImageMagick-note), there are arguments of a few simple operations.
 
 This is an example of adding background:
 
@@ -37,7 +37,7 @@ This is an example of adding background:
 ## About graph viewing and managing
 ### [nomacs](https://nomacs.org/)
 
-> nomacs is a free, open source image viewer, which supports multiple platforms. You can use it for viewing all common image formats including RAW and PSD images.
+> Nomacs is a free, open source image viewer, which supports multiple platforms. You can use it for viewing all common image formats including RAW and PSD images.
 
 It's the best graph viewer I have used, you cannot only view graph, you can also do some simple editing, rename, check the meta information and other operations. It has the function of action synchronization, you can synchronize your action and edit in multiple instances, even in other machines though LAN. I think it's one of the best image viewers in Linux. However, it didn't have the function of copy by dragging, I think this function is useful.
 
@@ -45,7 +45,7 @@ It's the best graph viewer I have used, you cannot only view graph, you can also
 
 ## About screenshot in Linux
 
-### [flameshot](https://github.com/lupoDharkael/flameshot)
+### [Flameshot](https://github.com/lupoDharkael/flameshot)
 
 Flameshot is also a powerful screenshot tool in Linux. It can do simple editing after shot, these include drawing lines, arrows, frames, and blurring, highlighting and so on. New version add the text adding function, I think it's convenient.
 
@@ -54,6 +54,10 @@ Flameshot is also a powerful screenshot tool in Linux. It can do simple editing 
 This is the result:
 
 ![flameshot-result]({{ "/assets/flameshot-result.png" | absolute_url }})
+
+Animation:
+
+![flameshot-animation]({{ "/assets/flameshot.gif" | absolute_url }})
 
 ## 3D modeling
 
@@ -81,15 +85,15 @@ Vim is a traditional editor in unix, and there are alway arguments between vim u
 
 ![vim]({{ "/assets/vim-shot.png" | absolute_url }})
 
-### [visiual studio code](https://code.visualstudio.com)
+### [Visiual Studio Code](https://code.visualstudio.com)
 
 ![vscode]({{ "/assets/vscode-shot.png" | absolute_url }})
 
-Visual studio code is a project of Microsoft, and Microsoft made it open source. It's a powerful editor, its completion is good and it is easy to manage plugins. When I need a plugin, I only need to switch to the plugin tag, search, and install. For convenience, I installed vim plugin and use vim keys. You can call out the shell, and do some operations on it directly ...
+Visual Studio Code is a project of Microsoft, and Microsoft made it open source. It's a powerful editor, its completion is good and it is easy to manage plugins. When I need a plugin, I only need to switch to the plugin tag, search, and install. For convenience, I installed vim plugin and use vim keys. You can call out the shell, and do some operations on it directly ...
 
 ## Password management
 
-### [Keepass](https://keepass.info/)
+### [KeePass](https://keepass.info/)
 
 > Today you need to remember many passwords. You need a password for the Windows network logon, your e-mail account, your website's FTP password, online passwords (like website member account), etc. etc. etc. The list is endless. Also, you should use different passwords for each account. Because if you use only one password everywhere and someone gets this password you have a problem... A serious problem. The thief would have access to your e-mail account, website, etc. Unimaginable.
 > 
