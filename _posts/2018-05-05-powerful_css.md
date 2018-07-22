@@ -7,11 +7,11 @@ categories: sort_out
 
 # CSS is powerful!
 
-during my GitHub Page building, I have tried some css tricks, such as the omit of items according to the width in top panel; put the panel on the top; and the spining avatar and so on.
+during my GitHub Page building, I have tried some css tricks, such as the omit of items according to the width in top panel; put the panel on the top; and the spinning avatar and so on.
 
 ## Spin avatar
 
-this is my spining avatar, try to put arrow on it:
+this is my spinning avatar, try to put arrow on it:
 
 <object id="picture" data='{{ "/assets/favicon.png" | absolute_url }}' type="image/png" width="200px" ></object>
 
@@ -30,7 +30,7 @@ And its implement is only several lines:
 
 ## animation
 
-However, CSS can not only do this, I found an animation implemented totally by CSS in a [site](https://ustcta.com) built by my friend:
+However, CSS cannot only do this, I found an animation implemented totally by CSS in a [site](https://ustcta.com) built by my friend:
 
 {% include sun.html %}
 

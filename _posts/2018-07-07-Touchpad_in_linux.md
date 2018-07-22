@@ -31,11 +31,11 @@ Section "InputClass"
         Option "VertHysteresis" "20"
 EndSection
 ```
-Because I always touch touchpad inadvertently when typing, so I forbade tap of one fingers, and mapped tap of two fingers to left click.
+Because I always touch touchpad inadvertently when typing, so I forbade tap of one finger, and mapped tap of two fingers to left click.
 
-You can use `synclient -l` to check all configures, and you can use `synclient <option> <value>` to temporarily adjust the options, it will disappear affter you reboot.
+You can use `synclient -l` to check all configures, and you can use `synclient <option> <value>` to temporarily adjust the options, it will disappear after you reboot.
 
-I gave some meanings of config items in comments, if you want to know in detail, you can man it
+I gave some meanings of configure items in comments, if you want to know in detail, you can man it
 
 ![synaptics]({{ "/assets/synaptics.svg" | absolute_url }})
 
@@ -43,7 +43,7 @@ This is the basic configuration of touchpad.
 
 ## [libinput-gestures](https://wiki.archlinux.org/index.php/Libinput#libinput-gestures)
 
-Libinput-gestures only support swipe of 3 or 4 fingers and pinch, however, it's enough.
+Libinput-gestures only support swipe of 3 or 4 fingers and pinch. However, it's enough.
 
 You need to install `libinput-gestures` package, and add yourself to group `input`.
 
@@ -61,18 +61,18 @@ gesture swipe right 4   xdotool key ctrl+Tab
 gesture pinch in        xdotool key ctrl+minus
 gesture pinch out       xdotool key ctrl+equal
 ```
-- Swipe up and down of 3 fingers is for switching in workspaces; (**This is very useful when you open a virtual machine in another workspace**)
+- Swipe up and down of 3 fingers is for switching among workspaces; (**This is very useful when you open a virtual machine in another workspace**)
 - Swipe up of 4 fingers is for overview (gnome);
 - Swipe down of 4 fingers is prtscr button, and I bound it to flameshot;
 - Swipe left and down of 3 fingers is for switching between applications;
 - Swipe left and down of 4 fingers is for switching between tabs;
 - And pinch in and out is for zoom in and out.
 
-It use xdotool to map gestures with shortcut. It also works for some functions to your desktop, and you can view the comments of configure file for detail.
+It uses xdotool to map gestures with shortcut. It also works for some functions to your desktop, and you can view the comments of configure file for detail.
 
 After every config file modification, you need to execute `libinput-gestures-setup restart` to reload the config file.
 ## Summary
 
 Some times we view pdf documents or surf internet with browser, we always turn pages, and our hand always stay on touchpad, so if you can do these frequently-used events directly on touchpad, it will be convenient and efficient.
 
-There are other configure ways of touchpad. for example: [fusuma](https://wiki.archlinux.org/index.php/Libinput#fusuma), [GnomeExtendedGestures](https://wiki.archlinux.org/index.php/Libinput#GnomeExtendedGestures) and so on, you can also try these. Find, Configure again and agin, I found it's not hard to use touchpad in linux.
+There are other configure ways of touchpad. For example: [fusuma](https://wiki.archlinux.org/index.php/Libinput#fusuma), [GnomeExtendedGestures](https://wiki.archlinux.org/index.php/Libinput#GnomeExtendedGestures) and so on, you can also try these. Find, Configure again and again, I found it's not hard to use touchpad in linux.

@@ -1,24 +1,24 @@
 ---
 layout: content
-title: Tools under linux
+title: Tools under Linux
 date: 2018-07-21 19:26:09 +0800
-categories: linux
+categories: Linux
 ---
 
-# This is a post about some good open source tools under linux.
+# This is a post about some good open source tools under Linux.
 
-I think it will continue updating, because I may find more good tools in my using.
+I think it will continue updating because I may find more good tools in my using.
 
 ## About graph processing
 ### [Gimp](https://www.gimp.org/)
 
-Gimp is a powerful tool of graph processing, it include many functions, I think if you are not very professional, it can replace of Adobe Photoshop. If your familiar with Photoshop, it is not hard to study it.
+Gimp is a powerful tool of graph processing, it includes many functions, I think if you are not very professional, it can replace of Adobe Photoshop. If you are familiar with Photoshop, it is not hard to study it.
 
 ![Gimp]({{ "/assets/gimp-shot.png" | absolute_url }})
 
 ### [Inkscape](https://inkscape.org/)
 
-Inkscape is also a powerful tool, but it is for processing vector drawings. you can translate bitmap to vector by path scanning, or directly draw it by the tools like Bezier curves or other, and you can also do union, intersection and many other operations to paths. I haven't been used Adobe Illustrator, but I think their function may be similiar.
+Inkscape is also a powerful tool, but it is for processing vector drawings. You can translate bitmap to vector by path scanning, or directly draw it by the tools like Bezier curves or other, and you can also do union, intersection and many other operations to paths. I haven't been used Adobe Illustrator, but I think their function may be similar.
 
 ![inkscape]({{ "/assets/inkscape-shot.png" | absolute_url }})
 
@@ -37,17 +37,17 @@ This is an example of adding background:
 ## About graph viewing and managing
 ### [nomacs](https://nomacs.org/)
 
-> nomacs is a free, open source image viewer, which supports multiple platforms. You can use it for viewing all common image formats including RAW and psd images.
+> nomacs is a free, open source image viewer, which supports multiple platforms. You can use it for viewing all common image formats including RAW and PSD images.
 
-It's the best graph viewer I have used, you can not only view graph, you can also do some simple editing, rename, check the meta informations and other operations. It have the function of action synchronization, you can synchronize your action and edit in multiple instances, even in other machines though LAN. I think it's one of the best image viewers in linux. However, it didn't have the function of copy by drag, I think this function is useful.
+It's the best graph viewer I have used, you cannot only view graph, you can also do some simple editing, rename, check the meta information and other operations. It has the function of action synchronization, you can synchronize your action and edit in multiple instances, even in other machines though LAN. I think it's one of the best image viewers in Linux. However, it didn't have the function of copy by dragging, I think this function is useful.
 
 ![inkscape]({{ "/assets/nomacs-shot.png" | absolute_url }})
 
-## About screenshot in linux
+## About screenshot in Linux
 
 ### [flameshot](https://github.com/lupoDharkael/flameshot)
 
-Flameshot is also a powerful screenshot tool in linux. It can do simle editing after shot, these include drawing lines, arrows, frames, and blurring, highlighting and so on. New version add the text adding function, I think it's convenient.
+Flameshot is also a powerful screenshot tool in Linux. It can do simple editing after shot, these include drawing lines, arrows, frames, and blurring, highlighting and so on. New version add the text adding function, I think it's convenient.
 
 ![flameshot]({{ "/assets/flameshot-shot.png" | absolute_url }})
 
@@ -59,7 +59,7 @@ This is the result:
 
 ### [Blender](https://www.blender.org/)
 
-Blender is a powerful 3D modeling software in linux. It can establish the 3D model, and then render a photo by the camera tool, or you can also make an animation, it even have the function of video editing. It approve multiple formats, like obj, dae and others. It have many functions, so it may a little hard to learn, if you are new to 3D modeling, you can watch teaching videos in youtube, it may amaze you.
+Blender is a powerful 3D modeling software in Linux. It can establish the 3D model, and then render a photo by the camera tool, or you can also make an animation, it even has the function of video editing. It approves multiple formats, like OBJ, DAE and others. It has many functions, so it may a little hard to learn, if you are new to 3D modeling, you can watch teaching videos in YouTube, it may amaze you.
 
 ![blender]({{ "/assets/blender-shot.png" | absolute_url }})
 
