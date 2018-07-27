@@ -2,7 +2,7 @@
 layout: content
 title: Tools under Linux
 date: 2018-07-21 19:26:09 +0800
-categories: Linux
+categories: linux
 ---
 
 # This is a post about some good open source tools under Linux.
@@ -39,7 +39,9 @@ This is an example of adding background:
 
 > Nomacs is a free, open source image viewer, which supports multiple platforms. You can use it for viewing all common image formats including RAW and PSD images.
 
-It's the best graph viewer I have used, you cannot only view graph, you can also do some simple editing, rename, check the meta information and other operations. It has the function of action synchronization, you can synchronize your action and edit in multiple instances, even in other machines though LAN. I think it's one of the best image viewers in Linux. However, it didn't have the function of copy by dragging, I think this function is useful.
+It's the best graph viewer I have used, you cannot only view graph, you can also do some simple editing, rename, check the meta information and other operations. You can paste the image from clipboard, then edit and save. It has the function of action synchronization, you can synchronize your action and edit in multiple instances, even in other machines though LAN. I think it's one of the best image viewers in Linux. However, it didn't have the function of copy by dragging, I think this function is useful.
+
+It also have a function which is openning the file with other applications, and then I can combine it with gimp, inkscape, even qr-filetransfer (by script file), and which can make it more convenience when managing photos.
 
 ![inkscape]({{ "/assets/nomacs-shot.png" | absolute_url }})
 

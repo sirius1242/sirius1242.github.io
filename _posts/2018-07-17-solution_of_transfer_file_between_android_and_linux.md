@@ -2,7 +2,7 @@
 layout: content
 title: Solution of transfer file between android and Linux
 date: 2018-07-17 16:01:11 +0800
-categories: Linux
+categories: linux
 ---
 
 # Solution of file transfering of multi-device
