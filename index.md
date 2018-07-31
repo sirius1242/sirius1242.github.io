@@ -9,7 +9,7 @@ layout: default
 }
 
 #header_wrap {
-	background-image: url('{{ "/assets/background.jpg" | absolute_url }}');
+	/*background-image: url('{{ "/assets/background.jpg" | absolute_url }}');*/
 	background-size: cover;
 	height: 100vh;
 	background-attachment: fixed;
@@ -112,11 +112,12 @@ ul.horizontal li a:hover:not(.active) {
     header.style.paddingTop="20%";
     header.style.position="sticky"
     document.getElementById('forkme_banner').style.display="none";
+	$("#header_wrap").css("background-image", "url('{{ "/assets/background.jpg" | absolute_url }}')");
 	$(window).scroll(function(){
 		$( "header" )[0].style.top=-($(this).scrollTop()/3)+"px";
 		//if ( $(window).scrollTop() >= 0.15 * $(window).width())
-		$("header")[0].innerText = $(this).scrollTop();
-		if ( $(this).scrollTop() >= 200)
+		//$("header")[0].innerText = $(this).scrollTop();
+		if ( $(this).scrollTop() >= 0.3 * $(window).width())
 			$("#header_wrap").css("background-image", "");
 		else
 			$("#header_wrap").css("background-image", "url('{{ "/assets/background.jpg" | absolute_url }}')");
