@@ -93,6 +93,23 @@ Vim is a traditional editor in unix, and there are alway arguments between vim u
 
 Visual Studio Code is a project of Microsoft, and Microsoft made it open source. It's a powerful editor, its completion is good and it is easy to manage plugins. When I need a plugin, I only need to switch to the plugin tag, search, and install. For convenience, I installed vim plugin and use vim keys. You can call out the shell, and do some operations on it directly ...
 
+## Planetarium
+
+### [Stellarium](http://stellarium.org/)
+> Stellarium is a free open source planetarium for your computer. It shows a realistic sky in 3D, just like what you see with the naked eye, binoculars or a telescope.
+
+It's a good planetarium software, you can show asterisms, watch in telescope view, adjust the speed of time, and it has a big database, which include catalogue of over 600,000 stars, extra catalogues with more than 177 million stars and so on.
+
+These are screenshots:
+
+![atmosphere]({{ "/assets/atmosphere.png" | absolute_url }})
+
+![info]({{ "/assets/info.png" | absolute_url }})
+
+![change landscape]({{ "/assets/landscape-chg.png" | absolute_url }})
+
+![asterism]({{ "/assets/asterism.png" | absolute_url }})
+
 ## Password management
 
 ### [KeePass](https://keepass.info/)
