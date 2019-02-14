@@ -2,111 +2,115 @@
 layout: default
 ---
 </section>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!--script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script-->
+<script
+    src="https://code.jquery.com/jquery-2.1.3.js"
+    integrity="sha256-goy7ystDD5xbXSf+kwL4eV6zOPJCEBD1FBiCElIm+U8="
+    crossorigin="anonymous"></script>
 <style>
 ul.horizontal {
-	list-style-type: none;
-	text-align: center;
-	/*background-color: #3399CC;*/
-	background-color: #f2f2f2;
-	/*margin-left: -230px;*/
-	overflow: hidden;
-	box-shadow: 0px 1px 0px #202020;
-	/*border-color: #008888;
-		border-radius: 10px 10px 10px 10px;*/
+    list-style-type: none;
+    text-align: center;
+    /*background-color: #3399CC;*/
+    background-color: #f2f2f2;
+    /*margin-left: -230px;*/
+    overflow: hidden;
+    box-shadow: 0px 1px 0px #202020;
+    /*border-color: #008888;
+      border-radius: 10px 10px 10px 10px;*/
 }
 
 .fixed {
-	top: 0px;
-	position: fixed;
+    top: 0px;
+    position: fixed;
 }
 ul.horizontal li {
-	font-size: 20px;
-	display:inline-block;
-	float: right;
+    font-size: 20px;
+    display:inline-block;
+    float: right;
 }
 
 #logo {
-	float: left;
-	border: none;
-	height: 50px;
-	vertical-align: middle;
+    float: left;
+    border: none;
+    height: 50px;
+    vertical-align: middle;
 }
 #picture {
-	-webkit-transition: -webkit-transform 1.6s ease-in-out;
-			transition: 		transform 1.6s ease-in-out;
+    -webkit-transition: -webkit-transform 1.6s ease-in-out;
+    transition: 		transform 1.6s ease-in-out;
 }
 
 #picture:hover {
-	-webkit-transform: rotate(720deg);
-			transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
 }
 
 ul.horizontal li a {
-	display: block;
-	color: black;
-	padding: 16px 20px;
-	text-decoration: none;
+    display: block;
+    color: black;
+    padding: 16px 20px;
+    text-decoration: none;
 }
 
 
 ul.horizontal li a:hover:not(.active) {
-	/*background-color: #606060;*/
-	font-weight: bold;
-	padding: 15px 20px;
-	box-shadow: 0px 2px 0px #0366d6;
+    /*background-color: #606060;*/
+    font-weight: bold;
+    padding: 15px 20px;
+    box-shadow: 0px 2px 0px #0366d6;
 }
 
 ul.horizontal li a.active {
-	background-color:#4CAF50;
+    background-color:#4CAF50;
 }
 
 #roll-fix { 
-	margin-top: -60px;
-	z-index: 10;
-	position: relative;
+    margin-top: -60px;
+    z-index: 10;
+    position: relative;
 }
 
-@media(max-width: 650px){
-	#wallpapers{
-		display: none;
-	}
-}
-@media(max-width: 500px){
-	#scripts{
-		display: none;
-	}
-}
-@media(max-width: 400px){
-	#files{
-		display: none;
-	}
-}
-</style>
-<div id="roll-fix" class="outer">
-	<ul class="horizontal">
-		<li id="wallpapers"><a href='/bing-wallpaper-collect'>Wallpapers</a></li><!--
-		--><li id="scripts"><a href='/script'>Scripts</a></li><!--
-		--><li id="files"><a href='{{ "/files.html" | absolute_url }}'>Files</a></li><!--
-		--><li><a href='{{ "/category/index.html" | absolute_url }}'>Category</a></li><!--
-		--><li><a href='{{ "/blog.html" | absolute_url }}'>Blog</a></li><!--
-		--><li id="logo"><a href='{{ "/index.html" | absolute_url }}' style="margin-top: -10px;"><object id="picture" data='{{ "/assets/favicon.png" | absolute_url }}' type="image/png" width=40px ></object></a></li>
-		<!--li id="logo"><object id="picture" data='{{ "/assets/favicon.png" | absolute_url }}' type="image/png" width=40px ></a></li-->
-		<!--li id="logo" style="padding: 15px 10px">Sirius' Blog</li-->
-	</ul>
-</div>
-<section id="main_content1" class="inner">
+    @media(max-width: 650px){
+        #wallpapers{
+            display: none;
+        }
+    }
+    @media(max-width: 500px){
+        #scripts{
+            display: none;
+        }
+    }
+    @media(max-width: 400px){
+        #files{
+            display: none;
+        }
+    }
+    </style>
+    <div id="roll-fix" class="outer">
+        <ul class="horizontal">
+            <li id="wallpapers"><a href='/bing-wallpaper-collect'>Wallpapers</a></li><!--
+            --><li id="scripts"><a href='/script'>Scripts</a></li><!--
+            --><li id="files"><a href='{{ "/files.html" | absolute_url }}'>Files</a></li><!--
+            --><li><a href='{{ "/category/index.html" | absolute_url }}'>Category</a></li><!--
+            --><li><a href='{{ "/blog.html" | absolute_url }}'>Blog</a></li><!--
+            --><li id="logo"><a href='{{ "/index.html" | absolute_url }}' style="margin-top: -10px;"><object id="picture" data='{{ "/assets/favicon.png" | absolute_url }}' type="image/png" width=40px ></object></a></li>
+            <!--li id="logo"><object id="picture" data='{{ "/assets/favicon.png" | absolute_url }}' type="image/png" width=40px ></a></li-->
+            <!--li id="logo" style="padding: 15px 10px">Sirius' Blog</li-->
+        </ul>
+    </div>
+    <section id="main_content1" class="inner">
 
-	{{ content }}
+        {{ content }}
 
-</section>
-<script type="text/javascript">
-	var elementPosition = $('#roll-fix').offset();
+    </section>
+    <script type="text/javascript">
+        var elementPosition = $('#roll-fix').offset();
 $(window).scroll(function () {
-	if ($(window).scrollTop() > elementPosition.top) {
-		$('#roll-fix').css('position', 'fixed').css('margin-top', '0px').css('top', '0').css('width', '100%');
-	} else {
-		$('#roll-fix').css('position', 'relative').css('margin-top', '-60px');
-	}
+    if ($(window).scrollTop() > elementPosition.top) {
+        $('#roll-fix').css('position', 'fixed').css('margin-top', '0px').css('top', '0').css('width', '100%');
+    } else {
+        $('#roll-fix').css('position', 'relative').css('margin-top', '-60px');
+    }
 });
-</script>
+    </script>
