@@ -8,7 +8,6 @@ categories: summary
 好久没有写博客了，这次我打算开始用中文写，感觉用英文写完全是给自己和别人找麻烦，自己英文水平不好，完全没有必要。
 
 [Teeworlds](https://www.teeworlds.com/) 是 “A retro multiplayer shooter”， 一款开源复古（？是不是卷轴，我查这个词只查到了复古的意思）多人射击游戏。
-<!--more-->
 
 一开始入坑是因为同学玩，然后当时正好对开源的东西比较感兴趣，结果一玩就是两年，带我入坑的同学大多都退坑了，然而我还在玩这个游戏。因为开源，这款游戏有很多 mod，比如 fng（祭祀），ddrace（闯关），infclass（僵尸），zcatch（吃鸡），teesmash（大乱斗）等等，也增加了它的可玩性，比如 FNG 和 DDRace 就是比较硬核的 mod，要求玩家掌握很多 Teeworlds 的技巧，尤其是 DDRace，可能有点像 I Wanna Be The Guy（我没玩过，只是听说），很难，而且有很多地图，因为老玩家的技术越来越强，因此地图也越来越难，心态不好的可能会砸键盘。（
 
