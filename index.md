@@ -90,7 +90,8 @@ ul.horizontal li a:hover:not(.active) {
     <a href="{{ post.url }}">{{ post.title }}</a>
 </h2>
 &#128193; {{ post.categories }} &emsp; &#128197; {{ post.date }}<br>
-{{ post.content | replace: "</h1>", " | " | replace: "</h2>", " | " | strip_html | replace: " | ", "<br>" | truncatewords: 50}}
+<!--{{ post.content | replace: "</h1>", " | " | replace: "</h2>", " | " | strip_html | replace: " | ", "<br>" | truncatewords: 50}}-->
+{{ post.excerpt | truncate: 500 }}
 {{ "---" | markdownify }}
 
 {% assign post = site.posts[1] %}
@@ -98,7 +99,8 @@ ul.horizontal li a:hover:not(.active) {
     <a href="{{ post.url }}">{{ post.title }}</a>
 </h2>
 &#128193; {{ post.categories }} &emsp; &#128197; {{ post.date }}<br>
-{{ post.content | replace: "</h1>", " | " | replace: "</h2>", " | " | strip_html | replace: " | ", "<br>" | truncatewords: 50}}
+<!--{{ post.content | replace: "</h1>", " | " | replace: "</h2>", " | " | strip_html | replace: " | ", "<br>" | truncatewords: 50}}-->
+{{ post.excerpt | truncate: 500 }}
 {{ "---" | markdownify }}
 
 
