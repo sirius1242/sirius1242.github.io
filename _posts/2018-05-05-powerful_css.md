@@ -4,6 +4,12 @@ title: powerful css
 date: 2018-05-05 11:17:01 +0800
 categories: sort_out
 ---
+<script>
+function shake()
+{
+    document.getElementsByClassName('language-css')[0].classList+=" shake-hard";
+}
+</script>
 
 # CSS is powerful!
 
@@ -15,7 +21,10 @@ this is my spinning avatar, try to put arrow on it:
 
 <object id="picture" data='{{ "/assets/favicon.png" | absolute_url }}' type="image/png" width="200px" ></object>
 
+<div><button style="float:right" onclick="shake()">copy</button></div>
+
 And its implement is only several lines:
+
 ```css
 #picture {
 	-webkit-transition: -webkit-transform 1.6s ease-in-out;
