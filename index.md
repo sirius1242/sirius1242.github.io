@@ -106,7 +106,7 @@ ul.horizontal li a:hover:not(.active) {
 
 </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
 	var header=document.getElementsByTagName('header')[0];
     document.getElementById('project_title').textContent="Sirius' Home";
