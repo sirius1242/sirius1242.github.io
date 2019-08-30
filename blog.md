@@ -13,7 +13,7 @@ layout: content
     <h1>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </h1>
-    &#128193; {{ post.categories }} &emsp; &#128197; {{ post.date }}<br>
+    &#128193; {{ post.categories[0] }} &emsp; &#128197; {{ post.date }}<br>
 		<details style="display: inline-block; padding: 0px 5px; background-color:#f2f2f2; border-radius: 5px 5px 5px 5px;">
 		<summary >click to show excerpt</summary>
    {{ post.content | replace: "</h1>", " | " | replace: "</h2>", " | " | strip_html | replace: " | ", "<br>" | truncatewords: 50}}

@@ -10,6 +10,7 @@ layout: content
 			<h2 style="color:#44aaff">{{ post.title }}</h2>
 			&#128197; {{ post.date }}<br>
     </a>
-   {{ post.content | replace: "</h1>", " | " | strip_html | remove: "Back to home" | replace: " | ", "<br>" | truncatewords: 50}}
+<!--{{ post.content | replace: "</h1>", " | " | strip_html | remove: "Back to home" | replace: " | ", "<br>" | truncatewords: 50}}-->
+    {{ post.excerpt | strip_html | truncate: 500 }}
 {% endfor %}
 
