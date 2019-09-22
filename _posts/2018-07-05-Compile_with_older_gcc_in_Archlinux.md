@@ -22,7 +22,7 @@ So I came up with an idea of using a different version of gcc when compile. Howe
 
 <object id="failure" data='{{ "/assets/deathmatch.svg" | absolute_url }}' type="image/svg"></object>
 
-I think make can also use this way, but you can directly modify `Makefile`, and add `CC="gcc-5"` or directly use `make CC=gcc-5`, it will directly solve this problem.
+I think make can also use this way, but you can directly modify `Makefile`, and add `CC="gcc-5"` or directly use `make CC=gcc-5`, it will directly solve this problem. For bam, you can change variable `compiler.driver` in `config.lua` to `gcc-5`, it also works.
 
 so, have a good time!
 
