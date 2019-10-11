@@ -47,4 +47,4 @@ categories: sort_out chinese
 
 渲染结果（转成了 gif，似乎转的时候带进来了网格的效果，视频是没有的）
 
-<img alt="result" src='{{ "/assets/result.gif" | absolute_url }}' width="100%">
+<a href='{{ "/assets/result.gif" | absolute_url }}'><img alt="result" src='{{ "/assets/result_small.gif" | absolute_url }}' width="50%"></a>
