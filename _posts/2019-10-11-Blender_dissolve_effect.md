@@ -21,7 +21,7 @@ categories: sort_out chinese
 
 <img alt="logo-mesh" src='{{ "/assets/logo_mesh.png" | absolute_url }}' width="100%">
 
-然后分别对颜色不同的两部分添加 remesh modifier（建议在不影响效果的前提下保持材料不同的部分为不同的 object 分别 remesh，因为 remesh 后整个 object 会全部变成一种材料）。
+然后分别对颜色不同的两部分添加 remesh modifier（建议在不影响效果的前提下保持材料不同的部分为不同的 object 分别 remesh，因为 remesh 后整个 object 会全部变成一种材料，也可以使用 subdivision surface，可以不用重新 map，但效果可能会差一点（溶解时可能会出现较大块的碎片））。
 
 <img alt="mesh" src='{{ "/assets/remesh.png" | absolute_url }}' width="50%">
 
@@ -29,7 +29,7 @@ categories: sort_out chinese
 
 <img alt="particle-system" src='{{ "/assets/particle_system.png" | absolute_url }}' width="60%"><img alt="particle-system2" src='{{ "/assets/particle_system2.png" | absolute_url }}' width="40%">
 
-添加两个力场，并对 turbulence 的参数进行改动：
+添加两个力场，并对 turbulence 的参数进行改动，wind 要旋转一下使其向右，这样可以将 particle 吹向右边：
 
 <img alt="add-field" src='{{ "/assets/add_field.png" | absolute_url }}' width="55%"><img alt="turbulence" src='{{ "/assets/turbulence.png" | absolute_url }}' width="45%">
 
