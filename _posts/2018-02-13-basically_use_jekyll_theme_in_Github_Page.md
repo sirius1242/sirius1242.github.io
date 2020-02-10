@@ -69,7 +69,7 @@ gem 'github-pages', group: :jekyll_plugins
 ```
 - if you have ruby 2.1.0 or higher installed (you can check it with `ruby --version`), directly use `gem install bundler`
 
-- type `bundle install`
+- type `bundle install` (You can use --path vendor/bundle parameter to apart from system gems)
 
 - type `bundle exec jekyll serve`, and it will give you the address, usually `http://127.0.0.1:4000`, and you can access this address in browser to preview your blog
 

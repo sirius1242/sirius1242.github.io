@@ -71,13 +71,18 @@ ul.horizontal li a.active {
     position: relative;
 }
 
-    @media(max-width: 650px){
+    @media(max-width: 750px){
         #wallpapers{
             display: none;
         }
     }
-    @media(max-width: 500px){
+    @media(max-width: 600px){
         #scripts{
+            display: none;
+        }
+    }
+    @media(max-width: 500px){
+        #pages{
             display: none;
         }
     }
@@ -94,6 +99,7 @@ ul.horizontal li a.active {
         <ul class="horizontal">
             <li id="wallpapers"><a href='/bing-wallpaper-collect'>Wallpapers</a></li><!--
             --><li id="scripts"><a href='/script'>Scripts</a></li><!--
+            --><li id="pages"><a href='{{ "/pages/" | absolute_url }}'>Pages</a></li><!--
             --><li id="files"><a href='{{ "/files.html" | absolute_url }}'>Files</a></li><!--
             --><li><a href='{{ "/category/index.html" | absolute_url }}'>Category</a></li><!--
             --><li><a href='{{ "/blog.html" | absolute_url }}'>Blog</a></li><!--
