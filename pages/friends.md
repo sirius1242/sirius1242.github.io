@@ -7,6 +7,8 @@ title: friends
 
 _(Arranged in alphabetical order, case insensitive.)_
 
+- Ertuil: [https://blog.ertuil.top/](https://blog.ertuil.top/)
+- Hustcw: [https://blog.wh98.me/](https://blog.wh98.me/)
 - Hypercube: [https://0x01.me/](https://0x01.me/)
 - iBug: [https://ibugone.com/](https://ibugone.com/)
 - ksqsf: [https://ksqsf.moe/](https://ksqsf.moe/)
