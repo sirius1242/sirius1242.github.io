@@ -35,5 +35,8 @@ _(未统计高中前所看番剧，以下按照观看时间顺序排列，欢迎
 - 命运石之门
 - 少女☆歌剧 Revue Starlight
 - 四畳半神话大系
+- Fate/Zero I、II（强烈推荐）
+- Fate/stay night 06 版
+- Re：从零开始的异世界生活 新编集版
 
 [Back]({{ "/pages/index.html" | absolute_url }})
