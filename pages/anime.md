@@ -38,5 +38,10 @@ _(未统计高中前所看番剧，以下按照观看时间顺序排列，欢迎
 - Fate/Zero I、II（强烈推荐）
 - Fate/stay night 06 版
 - Re：从零开始的异世界生活 新编集版
+- 黑礁 I、II
+- 黑礁 III（OVA）
+- 辉夜大小姐想让我告白~天才们的恋爱头脑战~
+- 魔法纪录
+- 四月是你的谎言（强烈推荐）
 
 [Back]({{ "/pages/index.html" | absolute_url }})
