@@ -1,8 +1,8 @@
 ---
 layout: content
-title: 发现一个对语言学习很有帮助的网站
+title: Good website for language learning
 date: 2020-05-11 14:39:15 +0800
-categories: 
+categories: sort_out chinese
 ---
 
 之前在同学那里得知 lang-8 这个可以发文章然后由 native speaker 来修改的网站的时候感觉很不错，想试一试，结果发现 lang-8 已经停止新用户注册了。无奈之下，查了半天有没有相似的网站，然后就发现了 [LangCorrect](https://langcorrect.com)。
