@@ -6,6 +6,7 @@ categories: sort_out chinese
 ---
 
 之前在同学那里得知 lang-8 这个可以发文章然后由 native speaker 来修改的网站的时候感觉很不错，想试一试，结果发现 lang-8 已经停止新用户注册了。无奈之下，查了半天有没有相似的网站，然后就发现了 [LangCorrect](https://langcorrect.com)。
+<!--more-->
 
 [LangCorrect](https://langcorrect.com) 也是一个与 lang-8 同类型的网站，注册用户后可以在上面发表用你想学习的语言撰写的文章，由相应的 native speaker 来进行批改。同样的，你需要批改其他用户撰写的自己母语的文章。网站在六个多月前搭建，因此目前用户还不多，英语母语的用户很多，其他语言的相对较少，反馈周期可能会有点长，这个与相应语言的 native speaker 用户数量有关。
 
