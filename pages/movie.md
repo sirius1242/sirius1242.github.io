@@ -125,5 +125,8 @@ _(看过的电影比较多，记得不全了，想起来一点加一点)_
     - 心理测量者剧场版（2015）
     - 心理测量者SS（1-3）
     - THE END OF EVANGELION
+    - 虫师：蚀日之翳
+    - 虫师：荆棘之路
+    - 虫师：铃之雫
 
 [Back]({{ "/pages/index.html" | absolute_url }})
