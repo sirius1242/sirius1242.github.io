@@ -3,11 +3,6 @@ layout: content
 title: anime
 ---
 
-<script type="text/javascript">
-var total = $('table tr').length-1;
-document.getElementById('total').innterHTML = 'Count: '+total;
-</script>
-
 ## Anime
 
 _(未统计高中前所看番剧，以下按照观看时间顺序排列，欢迎交流。评分较为主观，不喜勿喷)_
@@ -70,5 +65,12 @@ _(未统计高中前所看番剧，以下按照观看时间顺序排列，欢迎
 |电脑线圈|9|设定非常对我胃口，剧情还不错|
 
 <div id="count"></div>
+
+<script type="text/javascript">
+$(function itemcount(){
+    var total = $('table tr').length-1;
+    document.getElementById('count').innerHTML = 'Count: '+total;
+});
+</script>
 
 [Back]({{ "/pages/index.html" | absolute_url }})
