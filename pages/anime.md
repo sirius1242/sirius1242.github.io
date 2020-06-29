@@ -3,6 +3,11 @@ layout: content
 title: anime
 ---
 
+<script type="text/javascript">
+var total = $('table tr').length-1;
+document.getElementById('total').innterHTML = 'Count: '+total;
+</script>
+
 ## Anime
 
 _(未统计高中前所看番剧，以下按照观看时间顺序排列，欢迎交流。评分较为主观，不喜勿喷)_
@@ -63,5 +68,7 @@ _(未统计高中前所看番剧，以下按照观看时间顺序排列，欢迎
 |Air|8.5|对我来说 Key 社 gal 改的通病，人物性格奇怪，而且本作剧情较难理解，看了其他人结合游戏剧情才大概明白，而且刚开始同样看得劝退|
 |男子高中生的日常|9|很不错的搞笑番|
 |电脑线圈|9|设定非常对我胃口，剧情还不错|
+
+<div id="count"></div>
 
 [Back]({{ "/pages/index.html" | absolute_url }})
