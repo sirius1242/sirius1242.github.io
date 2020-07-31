@@ -13,7 +13,7 @@ _(Arranged in alphabetical order, case insensitive.)_
 - ksqsf: [https://ksqsf.moe/](https://ksqsf.moe/)
 - Layton: [https://www.laytonchen.com/](https://www.laytonchen.com/)
 - Mingliang Zeng: [https://mlzeng.com/](https://mlzeng.com/)
-- NIcecream: [https://nicecream.top/](https://nicecream.top/)
+- NIcecream: [https://voile.tech/](https://voile.tech/)
 - taoky: [https://blog.taoky.moe/](https://blog.taoky.moe/)
 - volltin: [https://volltin.com/](https://volltin.com/)
 - V1me: [https://blog.v1me.cn/](https://blog.v1me.cn/)
