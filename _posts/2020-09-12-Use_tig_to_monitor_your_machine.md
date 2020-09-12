@@ -2,10 +2,12 @@
 layout: content
 title: 用 tig 来监控你的机器
 date: 2020-09-12 16:31:56 +0800
-categories: 
+categories: sort_out chinese
 ---
 
 所谓 tig，就是指 telegraf，influxdb 以及 grafana 组成的一套工具链。telegraf 负责数据收集，influxdb 是数据库，负责数据存储和管理，grafana 则是可视化界面，查询 influxdb 中存储的数据并以可视化图表的形式展现出来。
+
+<!--more-->
 
 之前豆豆搞过一个活动室的温湿度监控的系统，就是用的这套工具链，再加上受 mcwindy teeworlds Online 人数查询 bot 的启发，我觉得可以每隔一段时间查询各 mod 的人数记录下来，再用这套工具链表现人数的变化。
 
