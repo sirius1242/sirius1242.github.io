@@ -104,7 +104,7 @@ ul.horizontal li a:hover:not(.active) {
 {{ post.excerpt | strip_html | truncate: 500 }}
 {{ "---" | markdownify }}
 
-<a href='{{ "/blog.html" | absolute_url }}'>Show More...</a>
+<h2><a href='{{ "/blog.html" | absolute_url }}'>Show More...</a></h2>
 
 </div>
 </div>
