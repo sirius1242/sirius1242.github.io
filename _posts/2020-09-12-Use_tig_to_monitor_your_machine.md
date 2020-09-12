@@ -1,6 +1,6 @@
 ---
 layout: content
-title: 用 tig 来监控你的机器
+title: Use tig to monitor your machine
 date: 2020-09-12 16:31:56 +0800
 categories: sort_out chinese
 ---
@@ -60,7 +60,7 @@ grant [READ,WRITE,ALL] on telegraf to telegraf;
 
 之后重启 telegraf。
 
-Grafana 安装之后启动，可以访问 <服务器 IP>:3000 来查看（也可以在 /etc/grafana/grafana.ini 里更改端口），别忘了防火墙放行 3000 端口。默认用户名和密码都是 admin，登录后会要求更改密码。在设置里添加数据源，选择 influxdb。
+Grafana 安装之后启动，可以访问 `<服务器 IP>:3000` 来查看（也可以在 /etc/grafana/grafana.ini 里更改端口），别忘了防火墙放行 3000 端口。默认用户名和密码都是 admin，登录后会要求更改密码。在设置里添加数据源，选择 influxdb。
 
 Grafana 有很多现成的模板，比如 928。可以选用现成的模板也可以自己添加 panel
 <img alt="import_template" src='{{ "/assets/import_template.png" | absolute_url }}' width="30%">
@@ -76,4 +76,5 @@ org_name = Main Org.
 这是我做的图表，统计了 teeworlds 各 mod 的人数和我管理的那台服务器的统计数据：[Teeworlds Dashboard](http://47.101.147.245:3000/d/LH3kRzdMk/teeworlds-dashboard?orgId=1)
 
 截图如下：
-<img alt="grafana screenshot" src='{{ "/assets/grafana.png" | absolute_url }}' width="30%">
+
+<img alt="grafana screenshot" src='{{ "/assets/grafana.png" | absolute_url }}' width="100%">
