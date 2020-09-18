@@ -10,6 +10,7 @@ categories: linux chinese
 之前在同学的服务器上折腾 teeworlds 服务器的时候由于没有 root，然后又面临不能自动启动的局面，于是想到了 systemd --user。
 
 后来因为机器突然坏了，所以配置都烂在了那台机器里，导致后面再次配置的时候又搞了半天，因此为了避免再出现这种状况，就写个 blog 记录一下。
+<!--more-->
 
 首先需要在 `$HOME/.config/systemd/user/` 目录下建立一个 [service_name].service 的文件，比如在某台机器上建立一个 minecraft.service 文件，内容如下：
 

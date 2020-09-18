@@ -3,7 +3,7 @@
 [[ -z $2 ]] && editor="vim" || editor=$2
 filename=_posts/`date +%Y-%m-%d-``echo $1 | sed 's/\ /\_/g'`.md
 echo $filename
-yaml="---\nlayout: content\ntitle: $1\ndate: `date '+%Y-%m-%d %H:%M:%S'` +0800\ncategories: \n---\n"
+yaml="---\nlayout: content\ntitle: $1\ndate: `date '+%Y-%m-%d %H:%M:%S'` +0800\ncategories: \n---\n\n<!--more-->"
 if [ -e "$filename" ]
 then
 	echo "$filename found."
