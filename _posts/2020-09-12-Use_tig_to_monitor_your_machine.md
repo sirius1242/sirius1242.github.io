@@ -78,3 +78,29 @@ org_name = Main Org.
 截图如下：
 
 <img alt="grafana screenshot" src='{{ "/assets/grafana.png" | absolute_url }}' width="100%">
+
+更新：
+
+后面增加了其他 teeworlds 机器的监控，因此使用 variable 做了根据主机过滤，但由于主机名很多都是些随机字符串，不方便直接根据主机名进行查看，找了一下，在[这个网址](https://community.grafana.com/t/how-to-alias-a-template-variable-value/10929/3)找到了解决办法：
+
+首先在 influxdb 中建立一个 measurement，如名为 Hostname，用于存储主机名和 alias 的对应关系：
+
+```sql
+insert Hostname,value=[hostnameA],text=[aliasA] count=1 0
+insert Hostname,value=[hostnameB],text=[aliasB] count=1 0
+...
+```
+
+之后建立两个变量，一个用于显示的变量和一个隐藏的用于查询的变量：
+
+用于显示的变量的查询语句（Server）：
+```sql
+SHOW TAG VALUES From Hostname WITH KEY = "text"
+```
+
+用于查询的变量的查询语句（alias）：
+```sql
+SHOW TAG VALUES FROM Hostname WITH KEY = "value" WHERE "text"=~ /$Server/
+```
+
+之后在 query 中选择 Host =~ /^\$alias\$/，在一些需要显示当前机器的地方使用 $Server 即可。
