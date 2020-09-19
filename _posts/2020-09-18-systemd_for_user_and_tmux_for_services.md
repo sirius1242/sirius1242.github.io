@@ -85,3 +85,11 @@ tmux select-layout -t "$session" tiled # 重新安排 pane 布局
 由于之前经常会一次性开启很多服务器（20+），因此在分 pane 的时候有可能会失败，经过 debug，使用了每次切割窗口时都重新安排布局（tmux split-window 等命令均为对当前 active 的 pane 进行操作，因此如果没有进行过调整，会对最后一个 pane 进行操作，没有重新安排布局的话分出来的会越来越小，最后太小了就分不出来了）以及每次切割窗口后都 sleep 1s 的解决办法，可根据不同情况进行调整。
 
 脚本设置结束，添加执行权限后即可用上一 part 的方法使用 systemd 控制这套脚本，因为程序退出之后相应的 pane 也会消失，因此请单独记录 log 或使用 tee 命令等方式记录 log。
+
+由于服务需要在用户退出之后仍然继续运行，根据 [Arch wiki](https://wiki.archlinux.org/index.php/Systemd/User#Automatic_start-up_of_systemd_user_instances)，需使用
+
+```sh
+# loginctl enable-linger username
+```
+
+来使得服务在开机即启动以及用户退出后继续运行。
