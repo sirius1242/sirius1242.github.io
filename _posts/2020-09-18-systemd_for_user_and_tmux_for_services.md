@@ -39,7 +39,17 @@ tmux select-layout -t "$session" tiled
 
 由于脚本执行之后就会退出，因此需要在 minecraft.service 中指定 Type=forking，这样 systemd 会监控 fork 出的子进程，Restart=always 会在程序退出后重启服务（会在任何一个子进程退出后重启服务）。详细可见 `man systemd.service`
 
+#### <span style="color:red">注意：tmux 必须由此脚本开启，这样才能让执行的命令能挂在脚本 forking 出的 tmux 进程下作为子进程，否则 systemd 无法监控这个子进程，会导致 systemd 认为服务 dead，导致服务不断重启，因此此方法不能在同一个用户下使用多个此类服务，目前我还没有找到此问题的解决方法。</span>
+
 写好 .service 文件之后就可以使用 `systemctl --user daemon-reload` 加载更改后的文件，使用 `systemctl --user enable [service_name].service` 来设置开机启动，使用 `systemctl --user start [service_name].service` 来启动服务，使用 `systemctl --user stop [service_name].service` 来重启，总之一切都可以在 systemd 的控制下，这可以使管理更为方便。
+
+由于服务需要在用户退出之后仍然继续运行，根据 [Arch wiki](https://wiki.archlinux.org/index.php/Systemd/User#Automatic_start-up_of_systemd_user_instances)，需使用
+
+```sh
+# loginctl enable-linger username
+```
+
+来使得服务在开机即启动以及用户退出后继续运行。
 
 ## 用 tmux 同时开启多个运行服务
 
@@ -85,11 +95,3 @@ tmux select-layout -t "$session" tiled # 重新安排 pane 布局
 由于之前经常会一次性开启很多服务器（20+），因此在分 pane 的时候有可能会失败，经过 debug，使用了每次切割窗口时都重新安排布局（tmux split-window 等命令均为对当前 active 的 pane 进行操作，因此如果没有进行过调整，会对最后一个 pane 进行操作，没有重新安排布局的话分出来的会越来越小，最后太小了就分不出来了）以及每次切割窗口后都 sleep 1s 的解决办法，可根据不同情况进行调整。
 
 脚本设置结束，添加执行权限后即可用上一 part 的方法使用 systemd 控制这套脚本，因为程序退出之后相应的 pane 也会消失，因此请单独记录 log 或使用 tee 命令等方式记录 log。
-
-由于服务需要在用户退出之后仍然继续运行，根据 [Arch wiki](https://wiki.archlinux.org/index.php/Systemd/User#Automatic_start-up_of_systemd_user_instances)，需使用
-
-```sh
-# loginctl enable-linger username
-```
-
-来使得服务在开机即启动以及用户退出后继续运行。
