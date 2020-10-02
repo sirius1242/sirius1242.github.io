@@ -39,7 +39,7 @@ tmux select-layout -t "$session" tiled
 
 由于脚本执行之后就会退出，因此需要在 minecraft.service 中指定 Type=forking，这样 systemd 会监控 fork 出的子进程，Restart=always 会在程序退出后重启服务（会在任何一个子进程退出后重启服务）。详细可见 `man systemd.service`
 
-#### <span style="color:red">注意：tmux 必须由此脚本开启，这样才能让执行的命令能挂在脚本 forking 出的 tmux 进程下作为子进程，否则 systemd 无法监控这个子进程，会导致 systemd 认为服务 dead，导致服务不断重启，因此此方法不能在同一个用户下使用多个此类服务，目前我还没有找到此问题的解决方法。</span>
+#### <span style="color:red">注意：tmux 必须由此脚本开启，split-windows 开启的 task 属于 tmux 的子进程，tmux 不由该脚本开启 systemd 则无法监控这个子进程，会导致 systemd 认为服务 dead 而不断重启服务，因此此方法不能在同一个用户下使用多个此类服务，目前我还没有找到此问题的解决方法。</span>
 
 写好 .service 文件之后就可以使用 `systemctl --user daemon-reload` 加载更改后的文件，使用 `systemctl --user enable [service_name].service` 来设置开机启动，使用 `systemctl --user start [service_name].service` 来启动服务，使用 `systemctl --user stop [service_name].service` 来重启，总之一切都可以在 systemd 的控制下，这可以使管理更为方便。
 
@@ -95,3 +95,45 @@ tmux select-layout -t "$session" tiled # 重新安排 pane 布局
 由于之前经常会一次性开启很多服务器（20+），因此在分 pane 的时候有可能会失败，经过 debug，使用了每次切割窗口时都重新安排布局（tmux split-window 等命令均为对当前 active 的 pane 进行操作，因此如果没有进行过调整，会对最后一个 pane 进行操作，没有重新安排布局的话分出来的会越来越小，最后太小了就分不出来了）以及每次切割窗口后都 sleep 1s 的解决办法，可根据不同情况进行调整。
 
 脚本设置结束，添加执行权限后即可用上一 part 的方法使用 systemd 控制这套脚本，因为程序退出之后相应的 pane 也会消失，因此请单独记录 log 或使用 tee 命令等方式记录 log。
+
+## 分组管理
+
+有时会有如上述内容所示的统一管理一批服务的需求，但如果又想可以通过 systemd 单独管理每个服务，比如在某一个服务 down 时自动重启，则目前想到的解决办法是使用 systemd 的分组管理。
+
+如[这篇文章](http://alesnosek.com/blog/2016/12/04/controlling-a-multi-service-application-with-systemd/)所示，首先需要写一个 dummy service (如 app.service)：
+
+```sh
+[Unit]
+Description=Application
+[Service]
+# dummy 程序运行后退出
+Type=oneshot
+# 随意找一个可以启动后立刻正常退出的命令作为 Execstart
+ExecStart=/bin/true
+# 主程序退出后仍认为 service 在运行
+RemainAfterExit=yes
+[Install]
+WantedBy=multi-user.target
+```
+
+之后在这个组内的其他服务需要增加 `PartOf`, `After` 以及修改 `WantedBy` ：
+```sh
+[Unit]
+Description=Application Component 1
+# 对 app.service 的停止及重启操作将被同时传递给这个服务
+PartOf=app.service
+# 在 app.service 之后启动
+After=app.service
+[Service]
+ExecStart="your_command"
+Restart=always
+[Install]
+# app.service 启动时这个服务也将启动
+WantedBy=app.service
+```
+
+组内服务都添加完毕后需要 enable 各服务，这时会将 service 文件软链接到 app.service.want 目录下，这样这些服务在 app.service 服务启动后会自动启动。
+
+不过这种办法带来的问题是，没办法直观地查看全部组内服务的运行状态，以及 task 的 log 会记录进系统日志，如果输出较多会干扰系统日志的查看。不知道后面能否找到更好的解决办法。
+
+前者可以通过使用 `systemctl list-dependencies --before app.service` 来查看依赖于 app.service 的其他 service 的启动状态作一个粗略的查看（仅能判断运行状态，无法获得其他信息），后者可以通过重定向 task 输出到指定 log 文件，通过 tail 等来查看 log，虽然不是很优雅，不过看起来搞一套脚本的话是可用的。
