@@ -39,7 +39,9 @@ tmux select-layout -t "$session" tiled
 
 由于脚本执行之后就会退出，因此需要在 minecraft.service 中指定 Type=forking，这样 systemd 会监控 fork 出的子进程，Restart=always 会在程序退出后重启服务（会在任何一个子进程退出后重启服务）。详细可见 `man systemd.service`
 
-#### <span style="color:red">注意：tmux 必须由此脚本开启，split-windows 开启的 task 属于 tmux 的子进程，tmux 不由该脚本开启 systemd 则无法监控这个子进程，会导致 systemd 认为服务 dead 而不断重启服务，因此此方法不能在同一个用户下使用多个此类服务，目前我还没有找到此问题的解决方法。</span>
+#### <span style="color:red">注意：tmux 必须由此脚本开启</span>
+
+split-windows 开启的 task 属于 tmux 的子进程，tmux 不由该脚本开启则 systemd 无法监控这个子进程，会导致 systemd 认为服务 dead 而不断重启服务，因此此方法不能在同一个用户下使用多个此类服务，由 tmux 的工作方式来看似乎并没有什么解决办法。
 
 写好 .service 文件之后就可以使用 `systemctl --user daemon-reload` 加载更改后的文件，使用 `systemctl --user enable [service_name].service` 来设置开机启动，使用 `systemctl --user start [service_name].service` 来启动服务，使用 `systemctl --user stop [service_name].service` 来重启，总之一切都可以在 systemd 的控制下，这可以使管理更为方便。
 
