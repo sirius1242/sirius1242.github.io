@@ -13,3 +13,6 @@ title: static pages
 <li><a href='{{ "/pages/comic.html" | absolute_url }}'>Comic</a></li>
 <li><a href='{{ "/pages/movie.html" | absolute_url }}'>Movie</a></li>
 <li><a href='{{ "/pages/game.html" | absolute_url }}'>Game</a></li>
+
+<!--### Misc
+<li><a href='{{ "/pages/ideas.html" | absolute_url }}'>Ideas</a></li>-->

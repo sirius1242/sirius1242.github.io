@@ -13,6 +13,7 @@ _(Arranged in alphabetical order, case insensitive.)_
 - iBug: [https://ibugone.com/](https://ibugone.com/)
 - ksqsf: [https://ksqsf.moe/](https://ksqsf.moe/)
 - Layton: [https://www.laytonchen.com/](https://www.laytonchen.com/)
+- Loliw: [https://loliw.moe/](https://loliw.moe/)
 - Mingliang Zeng: [https://mlzeng.com/](https://mlzeng.com/)
 - myl: [https://www.myl.moe/](https://www.myl.moe/)
 - NIcecream: [https://voile.tech/](https://voile.tech/)
