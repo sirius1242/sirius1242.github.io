@@ -30,7 +30,7 @@ Mineways 只有 Windows 版本，于是跑在了 Windows 7 虚拟机里。不过
 
 <a href='{{ "/assets/building.png" | absolute_url }}'><img alt="result" src='{{ "/assets/building_small.png" | absolute_url }}' width="100%"></a>
 
-当然如果只是渲染存档的话搞一个好一些的光影（虽然光影的话我的电脑估计带不动）或者使用 等渲染器效果可能也不会差很多，导出 3D 模型的主要好处还是可以使用导出的模型制作动画。个人刚接触人物动画，对这些还不熟悉，就用 MCPrep 的 Simple Player 和 Simple Villager 两个模型简单制作了一个小动画：
+当然如果只是渲染存档的话搞一个好一些的光影（虽然光影的话我的电脑估计带不动）或者使用 CHUNKY 等渲染器效果可能也不会差很多，导出 3D 模型的主要好处还是可以使用导出的模型制作动画。个人刚接触人物动画，对这些还不熟悉，就用 MCPrep 的 Simple Player 和 Simple Villager 两个模型简单制作了一个小动画：
 
 <iframe src="//player.bilibili.com/player.html?aid=331755520&bvid=BV1hA411M7N7&cid=300368213&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
