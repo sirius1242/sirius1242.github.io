@@ -2,7 +2,7 @@
 layout: content
 title: Blender create liquid in glass
 date: 2019-10-10 20:57:06 +0800
-categories: sort_out chinese
+categories: misc chinese
 ---
 
 最近又折腾了一下 Blender，上次折腾的东西感觉忘得差不多了，于是这次记一下~~省得下次再忘了~~。

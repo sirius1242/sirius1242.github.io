@@ -16,6 +16,7 @@ ul.horizontal {
     /*margin-left: -230px;*/
     overflow: hidden;
     box-shadow: 0px 1px 0px #202020;
+    margin-bottom: 0px;
     /*border-color: #008888;
       border-radius: 10px 10px 10px 10px;*/
 }
@@ -81,10 +82,22 @@ ul.horizontal li a.active {
     white-space: pre-wrap;
 }
 
+.scrollbar {
+    /*position: fixed;*/
+    top: 0;
+    height: 3px;
+    background: #505050;
+    transition-property: width, background;
+    transition-duration: 1s, 1s;
+    z-index: 99999
+}
+
 #roll-fix { 
     margin-top: -60px;
     z-index: 10;
     position: relative;
+    position: sticky;
+    top: 0px;
 }
 
     @media(max-width: 750px){
@@ -123,6 +136,7 @@ ul.horizontal li a.active {
             <!--li id="logo"><object id="picture" data='{{ "/assets/favicon.png" | absolute_url }}' type="image/png" width=40px ></a></li-->
             <!--li id="logo" style="padding: 15px 10px">Sirius' Blog</li-->
         </ul>
+        <div class="scrollbar" id="bar" style="width: 0%;"></div>
     </div>
     <section id="main_content1" class="inner">
 
@@ -130,12 +144,25 @@ ul.horizontal li a.active {
 
     </section>
     <script type="text/javascript">
-        var elementPosition = $('#roll-fix').offset();
+        /*var elementPosition = $('#roll-fix').offset();
 $(window).scroll(function () {
     if ($(window).scrollTop() > elementPosition.top) {
         $('#roll-fix').css('position', 'fixed').css('margin-top', '0px').css('top', '0').css('width', '100%');
     } else {
         $('#roll-fix').css('position', 'relative').css('margin-top', '-60px');
     }
-});
+       */
+    if (document.body.clientWidth > 860) {
+        window.addEventListener("scroll", () => {
+            let s = document.documentElement.scrollTop || document.body.scrollTop,
+                a = document.documentElement.scrollHeight || document.body.scrollHeight,
+                b = window.innerHeight, c,
+                result = parseInt(s / (a - b) * 100),
+                cached = document.getElementById('bar');
+            cached.style.width = result + "%";
+            const skinMenu = document.querySelector(".skin-menu");
+            skinMenu && skinMenu.classList.remove("show");
+        })
+    } // Implementation refer: https://github.com/mirai-mamori/Sakurairo
+//});
     </script>

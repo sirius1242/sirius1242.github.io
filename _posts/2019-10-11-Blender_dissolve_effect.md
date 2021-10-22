@@ -2,7 +2,7 @@
 layout: content
 title: Blender dissolve effect
 date: 2019-10-11 12:44:09 +0800
-categories: sort_out chinese
+categories: misc chinese
 ---
 
 可能是因为 blender 2.8 改动太大，按照[原文](https://blenderdiplom.com/en/tutorials/simulation/394-tutorial-dissolve-your-logo-in-blender-262.html)中的一些操作我不知道如何进行（比如给 material 加上 blend texture，在 node 界面倒是可以加上一些 texture，但这里要的 blend 类型没有），不过省略了一些步骤之后仍然 work，我对其进行了一些总结，总的来说制作 dissolve effect 的步骤如下：

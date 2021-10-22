@@ -2,7 +2,7 @@
 layout: content
 title: About my top panel
 date: 2018-04-30 14:42:14 +0800
-categories: sort_out
+categories: misc
 ---
 
 # Somethings about my top panel in GitHub Page [^1]
@@ -54,5 +54,9 @@ But z-index didn't work. The position have some options, what if I don't use sta
 ## include other repoistories
 
 With the experience shared by a predecessor, I make two other repoistories as GitHub Page, and also linked them in my top panel. But they are not in my main repoistory, so they didn't have panel. So I copy the `content.html` and `_config.yml` to them, hope they can also have panel, it works but links are all wrong. I use a variable which stores url of my [main page](https://sirius1242.github.io) in `_config.yml` and then refer it in every link, It finally works properly.
+
+## Update 2021/10/22
+
+Now you can directly use css to implement this effect, using `style="position: sticky;"`.Reference: [Firefox: Scroll-linked effects](https://firefox-source-docs.mozilla.org/performance/scroll-linked_effects.html)
 
 [^1]: This top panel is a long-term project (, and these things mostly from my memory, so some things may not right, If you are interested in the process of my top panel, you can check history versions of my GitHub Page, I hope this essay can be useful to you.

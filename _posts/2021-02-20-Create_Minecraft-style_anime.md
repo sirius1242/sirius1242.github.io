@@ -2,7 +2,7 @@
 layout: content
 title: Create Minecraft-style anime
 date: 2021-02-20 18:13:20 +0800
-categories: sort_out chinese
+categories: misc chinese
 ---
 
 ## 制作 MC 画风的动画

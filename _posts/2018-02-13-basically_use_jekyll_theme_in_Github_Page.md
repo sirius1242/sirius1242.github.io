@@ -2,7 +2,7 @@
 layout: content
 title: basically use jekyll theme in Github Page
 date: 2018-02-13 12:52:16 +0800
-categories: sort_out
+categories: misc
 ---
 # basically tutor to use jekyll theme in Github Page
 ### if you don't have a Github Page, create it first.

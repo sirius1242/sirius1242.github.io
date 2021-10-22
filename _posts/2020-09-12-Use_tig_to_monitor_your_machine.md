@@ -2,7 +2,7 @@
 layout: content
 title: Use tig to monitor your machine
 date: 2020-09-12 16:31:56 +0800
-categories: sort_out chinese
+categories: misc chinese
 ---
 
 所谓 tig，就是指 telegraf，influxdb 以及 grafana 组成的一套工具链。telegraf 负责数据收集，influxdb 是数据库，负责数据存储和管理，grafana 则是可视化界面，查询 influxdb 中存储的数据并以可视化图表的形式展现出来。
