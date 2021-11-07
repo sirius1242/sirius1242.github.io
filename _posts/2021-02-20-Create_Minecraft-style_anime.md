@@ -9,6 +9,8 @@ categories: misc chinese
 
 突然就有了把 Minecraft 存档转换成 3D 模型的想法，经过搜索发现了 [Mineways](https://www.realtimerendering.com/erich/minecraft/public/mineways/) 这个软件。
 
+<span style="color: red">注：本文有大量图片</span>
+
 <!--more-->
 
 Mineways 只有 Windows 版本，于是跑在了 Windows 7 虚拟机里。不过在转换大范围的存档时内存可能不够用，需要事先把虚拟机内存开大一点。读存档的话就打开存档所在的目录，选择 level.dat 即可打开存档，可通过 View 标签在出生点、玩家位置、下界、末地等几个位置切换。也可以进行切换材质等。使用右键划出需要转换的区域，选择转换的高度范围，如果选定的高度范围内不是包括了所有可见方块（暴露出来的方块），程序会询问是否切换到计算好的高度范围（包括了所有可见方块）。
@@ -56,3 +58,27 @@ Cycles 引擎 OpenImageDenoise 去噪（NLM 在光线较暗时仍然会产生很
 其中灯笼是`*32-4`，火把是`*28-4`，末地烛是`*20-4`，下界传送门直接`*8`，当然这是我个人感觉比较合适的数值，如果有兴趣做类似渲染可以另行调整。
 
 当然因为只有 CPU，这张图花了 1h 左右来渲染，恐怕 cycles 在没有 GPU 的情况下并不能胜任渲染动画的工作。
+
+## Update 2021/11/07
+
+最近发现了地形师[珀尔 Po_er](https://space.bilibili.com/8392977) 的一些很漂亮的地图，让我又想跑两张图玩玩了。下了一份 [Skantos](https://www.bilibili.com/read/cv4257011) 的地图，导出其中的部分区域进行渲染尝试。
+
+因为原先的水很不好看，调了一下 shader node (参考 [Berry5015 的教程](https://www.bilibili.com/video/BV1FK4y1X7Qs?t=4m36s))，如下图：
+
+<img alt="shader nodes" src='{{"assets/../../assets/water_nodes.png" | absolute_url }}' width="70%">
+
+然后通过 MCPrep 生成一些模型渲染了如下照片(其中船模型 MCPrep 还没有，是在[issue #245](https://github.com/TheDuckCow/MCprep/issues/245) 中找到的)：
+
+注：点击后查看原图，原图大小较大。
+
+（取景地：迷雾之沼）
+<a href='{{ "/assets/skantos_part1.png" | absolute_url }}'><img alt="skantos_part1" src='{{ "/assets/skantos_part1_small.png" | absolute_url }}' width="100%"></a>
+
+下面这张图给浮冰也加了半透明，做了类似上面水的处理，不过保留了原材质，参数也有所不同，而且添加了根据材质纹理*随机噪声的 displacement 节点。（取景地：鲸跃冰桥）
+
+<a href='{{ "/assets/skantos_part2.png" | absolute_url }}'><img alt="skantos_part2" src='{{ "/assets/skantos_part2_small.png" | absolute_url }}' width="100%"></a>
+
+（取景地：蜥蜴石）
+<a href='{{ "/assets/skantos_part3.png" | absolute_url }}'><img alt="skantos_part3" src='{{ "/assets/skantos_part3_small.png" | absolute_url }}' width="100%"></a>
+
+三张图片都开了景深，但因为用的广角，效果也不明显。
