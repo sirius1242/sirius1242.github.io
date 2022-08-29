@@ -115,7 +115,6 @@ ul.horizontal li a:hover:not(.active) {
     document.title="Sirius’ Home";
     header.style.paddingTop="20%";
     header.style.position="sticky"
-    document.getElementById('forkme_banner').style.display="none";
 	$("#header_wrap").css("background-image", "url('{{ "/assets/background.jpg" | absolute_url }}')");
 	$(window).scroll(function(){
 		$( "header" )[0].style.top=-($(this).scrollTop()/3)+"px";
