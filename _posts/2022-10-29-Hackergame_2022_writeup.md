@@ -2,6 +2,7 @@
 layout: content
 title: Hackergame 2022 writeup
 date: 2022-10-29 15:33:19 +0800
+usemathjax: true
 categories: misc chinese
 ---
 
@@ -128,14 +129,14 @@ curl -b cookie.txt 'http://202.38.93.111:10047/xcaptcha' -X POST -H <lots_of_hea
     ```latex
     {\lowercase{
     \catcode`\#=12
-    \cactcode`\_=12}
+    \catcode`\_=12}
     \input{"/flag2"}}}
     ```
 
 ### Flag 的痕迹（<span style="color:red">未解出</span>）
 - 本来找了半天 dokuwiki 的 bug，发现好像并没有很多相关信息
 - 然后发现了可以通过 `rev=<rev_id>` 在关闭 `do=revision` 时访问历史版本([ref](https://forum.dokuwiki.org/d/14567-current-revision-of-page/9))
-- 但这你要先知道版本号，然后又查到了 `at=<timestamp>` 的语法([ref](https://www.dokuwiki.org/date_at?rev=1412251581))，并且在右下角会显示 `<rev_id>.txt.gz`，然后发现了两个历史版本：`1665224447`和`1665224470`，并且现在的版本号为`1666320801`。然而两个历史版本中并没在 start 页面藏 flag，和题目描述不符啊，尬住了。然后最后实在想不出来还把前两个版本页面上全部 base64 解码了，属于是病急乱投医了
+- 但这你要先知道版本号，然后又查到了 `at=<timestamp>` 的语法([ref](https://www.dokuwiki.org/date_at?rev=1412251581))，并且在右下角会显示 `<rev_id>.txt.gz`，然后发现了两个历史版本：`1665224447`和`1665224470`，并且现在的版本号为`1666320801`。然而两个历史版本中并没在 start 页面藏 flag，心想这和题目描述不符啊，尬住了。然后最后实在想不出来还把前两个版本页面上全部 base64 解码了，属于是病急乱投医了
 
 ### 安全的在线测评（<span style="color:red">只解出第一问</span>）
 - 无法 AC 的题目：看了代码之后看到 `/data/static.out`，想到可以读这个文件来输出结果。
@@ -164,7 +165,7 @@ os.chmod(outpaths[i], 0o700)
 <img alt="first flag image" src='{{ "/assets/flag_layer.jpg" | absolute_url }}' width="100%">
 
 ### 微积分计算小练习（<span style="color:red">未解出</span>）
-- 一开始没搞懂，还以为数据会存在本地（抱歉，菜到各位了）。然后后面发现是分享连接后面的 `result` 是 `score:name` 的 base64，并且会把 base64 解码后的结果插入正文的 HTML 中，于是想到了 XSS，然后一直在尝试各种插入 js，最后发现运行不了，实在想不出来就去做别的题了。中间也有尝试用 get cookie without js 之类的关键词搜索过，但就是没搜出来，搜索能力还是太差。
+- 一开始没搞懂，还以为数据会存在本地（抱歉，菜到各位了）。然后后面发现是分享连接后面的 `result` 是 `score + ":" + name` 的 base64，并且会把 base64 解码后的结果插入正文的 HTML 中，于是想到了 XSS，然后一直在尝试各种插入 js，最后发现运行不了，实在想不出来就去做别的题了。中间也有尝试用 get cookie without js 之类的关键词搜索过，但就是没搜出来，搜索能力还是太差。
 
 ### 惜字如金（<span style="color:red">只解出第一问</span>）
 看了下题目描述，发现是要爆破 secret，不过爆破规则比较简单，就是在各个辅音字母位点尝试插入一到多个相同的辅音字母，在每段末位插入 0 到 1 个 'e' 即可。因为急所以没写 XZRJification 脚本，只对比了 hash 开头，不过一共没几个，脚本输出之后人眼确认一下就好，上 exp：
@@ -206,7 +207,7 @@ for i in range(diff):
 ```
 
 ### 不可加密的异世界（<span style="color:red">只解出前两问</span>）
-- 疏忽的神：算法为：明文 Name+"Open the door!" 再根据输入的 key 进行 padding，如果 key 超过长度则后半部分作为 iv，最后明密文相等则给 flag。一开始想 ECB 弱密码，当时没看到是只加密一次且明密文要相等，搞错了。然后想：既然只加密一次，那只有加入 IV 才有希望，只要限制在一个 block，CBC 可以对明文 IV 异或一次再加密。明文 14 长，所以肯定是 AES（脚本限制 DEC 为 8），然后用随意一个 key（称 key1）解密明文，得到的结果再和明文异或，就得到了所需的 IV，最后提交的时候选 AES+CBC，key 为刚才解密时的 key+IV，就能拿到 flag。
+- 疏忽的神：算法为：明文 Name+"Open the door!" 再根据输入的 key 进行 padding，如果 key 超过长度则后半部分作为 iv，最后明密文相等则给 flag。一开始想 ECB 弱密码，当时没看到是只加密一次且明密文要相等，搞错了。然后想：既然只加密一次，那只有加入 IV 才有希望，只要限制在一个 block，CBC 可以对明文 IV 异或一次再加密。明文 14 长，所以肯定是 AES（脚本限制 DES 为 8），然后用随意一个 key（称 key1）解密明文，得到的结果再和明文异或，就得到了所需的 IV，最后提交的时候选 AES+CBC，key 为刚才解密时的 key+IV，就能拿到 flag。
 - 心软的神：算法为，生成一串随机明文，然后输入多次 key，每次取一段明文，要求明文整体加密后与该段明文对应的密文与该段明文相同，还是上题的办法，但要倒推，每段密文先解密，把解密出的明文和对应的该段明文异或得到 IV（也就是上一段密文），最后倒退到开头得到初始 IV，代码如下：
 ```python
 from magic_box import *
@@ -226,7 +227,7 @@ print("01010101010101010101010101010101" + iv.hex())
 <br>这次不能选择 IV 了，并且要加密两次。加密两次就终于用到第一问思路的弱密码了，所以就 DES-ECB。但要求 key 是由输入进行 crc128 计算得到的，刚开始搞错了，尝试爆破了一下，发现半天没出来菜想到数量级不对。然后想用现成的逆向工具，搜到了[crchack](https://github.com/resilar/crchack)，也不知道是题目用的算法和工具有点差异还是工具算 128 有点问题（没仔细研究代码），crc32 的逆向都没问题，但 128 的就是不行。然后找到了[CRC and how to Reverse it](http://www.woodmann.com/fravia/crctut1.htm)（如果该页看不了请想其他办法），但大晚上实在是看不进去，再加上有点急（你先别急），最后就去看别的题了。
 
 ### 置换魔群（<span style="color:red">只解出第一问</span>）
-- RSA：就是一个置换群阶的问题，题目给出了 e = 65537，模是置换群的长度 n 阶乘，直接求 $e^{-1} \mod{n!}$ 即可得到 d，然后把输出的密文转化成 permutation_element，对其进行 d 次变换即可（即 permutation_element 为 msg，求 msg ** d）。但发现要求计算 15 次，然后题目那边的输出有个 [1,2,3] 有点干扰，昨晚很急，不想思考只想上分，调了半天脚本，exp 如下：
+- RSA：就是一个置换群阶的问题，题目给出了 e = 65537，模是置换群的长度 n 阶乘，直接求 $$e^{-1} \mod{n!}$$ 即可得到 d，然后把输出的密文转化成 permutation_element，对其进行 d 次变换即可（即 permutation_element 为 msg，求 msg ** d）。但发现要求计算 15 次，然后题目那边的输出有个 [1,2,3] 有点干扰，昨晚很急，不想思考只想上分，调了半天脚本，exp 如下：
 ```python
 import re
 from Crypto.Util.number import inverse
@@ -278,11 +279,11 @@ if (tHMap < tSDF) {
     return tSDF;
 }
 ```
-- 然后 tSDF 是由 `rayMarchConservative` 函数计算的，函数 return 的 `t` 由 `dist = sceneSDF(curIsect, pColor)` 计算的 dist 得到，继续看 `sceneSDF`
-- 有个 `pTO` 变量贯穿 `sceneSDF` 始终，pTO 的计算为，这个 mk_trans 估计就是遮挡的函数，去掉得到如下渲染结果：
+- 然后 `tSDF` 是由 `rayMarchConservative` 函数计算的，函数 return 的 `t` 由 `dist = sceneSDF(curIsect, pColor)` 计算的 `dist` 得到，继续看 `sceneSDF`
 ```glsl
 vec4 pTO = mk_trans(35.0, -5.0, -20.0) * mk_scale(1.5, 1.5, 1.0) * pH;
 ```
+- 有个 `pTO` 变量贯穿 `sceneSDF` 始终，pTO 的计算为，这个 `mk_trans` 估计就是遮挡的函数，去掉得到如下渲染结果：
 <img alt="first flag image" src='{{ "/assets/first_flag_img.jpg" | absolute_url }}' width="100%">
 - 不够清晰，折腾半天最后直接大力出奇迹，把天空改成灰色（在 `shadeSkybox` 里改 vec value），然后调出合适的 scale ratio 得到如下图片：
 ```glsl

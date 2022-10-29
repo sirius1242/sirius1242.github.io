@@ -20,3 +20,5 @@ defaults:
       path: "assets"
     values:
       image: true
+# Build settings
+markdown: kramdown
