@@ -108,7 +108,7 @@ ul.horizontal li a:hover:not(.active) {
 
 </div>
 </div>
-<script src='{{ "/js/jquery-2.1.3.js" | absolute_url }}'></script>
+<script src='{{ "/js/jquery-3.5.0.js" | absolute_url }}'></script>
 <script type="text/javascript">
 	var header=document.getElementsByTagName('header')[0];
     document.getElementById('project_title').textContent="Sirius' Home";
